@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Michael Danilov</title>
+	<meta content="Michael Danilov, Михаил Данилов, web-developer, веб-разработчик, homepage, домашняя страница" name="description">
+	<script type="text/javascript" src="//yandex.st/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".dnlv-lang__ru").click(function() {
+				$(".dnlv-name__en").removeClass("dnlv-opened").addClass("dnlv-closed");
+				$(".dnlv-name__ru").removeClass("dnlv-closed").addClass("dnlv-opened");
+				$(".dnlv-positions__now__en").removeClass("dnlv-opened").addClass("dnlv-closed");
+				$(".dnlv-positions__now__ru").removeClass("dnlv-closed").addClass("dnlv-opened");
+				$(".dnlv-positions__before__en").removeClass("dnlv-opened").addClass("dnlv-closed");
+				$(".dnlv-positions__before__ru").removeClass("dnlv-closed").addClass("dnlv-opened");
+			});
+			$(".dnlv-lang__en").click(function() {
+				$(".dnlv-name__ru").removeClass("dnlv-opened").addClass("dnlv-closed");
+				$(".dnlv-name__en").removeClass("dnlv-closed").addClass("dnlv-opened");
+				$(".dnlv-positions__now__ru").removeClass("dnlv-opened").addClass("dnlv-closed");
+				$(".dnlv-positions__now__en").removeClass("dnlv-closed").addClass("dnlv-opened");
+				$(".dnlv-positions__before__ru").removeClass("dnlv-opened").addClass("dnlv-closed");
+				$(".dnlv-positions__before__en").removeClass("dnlv-closed").addClass("dnlv-opened");
+			});
+		});
+	</script>
+	<link rel="icon" href="http://danilov.me/favicon.ico">
+	<style type="text/css">
+		.dnlv-body {
+			background-color: #222222;
+			color: #FFFFFF;
+			margin: 0;
+			padding: 0;
+		}
+		.dnlv-opened {
+			display: block;
+		}
+		.dnlv-closed {
+			display: none;
+		}
+		.dnlv-card {
+			font: 16px/20px 'Helvetica Neue',Helvetica,Arial;
+			height: 140px;
+			width: 300px;
+			left: 50%;
+			top: 50%;
+			margin: -70px 0 0 -150px;
+			position: absolute;
+			text-align: center;
+		}
+		.dnlv-name {
+			margin: 10px 0;
+			font-size: 2em;
+			font-weight: bold;
+			display: inline-block;
+		}
+		.dnlv-lang {
+			margin: 0 0 0 10px;
+			display: inline-block;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		.dnlv-lang__en, .dnlv-lang__ru {
+			display: block;
+			font-size: 15px;
+			margin: -5px 0;
+		}
+		.dnlv-positions__before {
+			color: #999999;
+			font-size: 12px;
+		}
+		.dnlv-link {
+			color: #FFFFFF;
+		}
+		.dnlv-contacts__email {
+			display: block;
+			margin: 0 0 5px;
+		}
+		.dnlv-contacts__jabber {
+			display: block;
+			margin: 0 0 5px;
+		}
+		.dnlv-social {
+			margin: 20px 0 0 0;
+			font-size: 12px;
+		}
+	</style>
+</head>
+<body class="dnlv-body">
+	<div class="dnlv-card">
+		<div class="dnlv-name">
+			<span class="dnlv-name__en dnlv-opened">Michael Danilov</span>
+			<span class="dnlv-name__ru dnlv-closed">Михаил Данилов</span>
+		</div>
+		<div class="dnlv-lang">
+			<span class="dnlv-lang__en">en</span>
+			<span class="dnlv-lang__ru">ru</span>
+		</div>
+		<div class="dnlv-positions">
+			<div class="dnlv-positions__now">
+				<span class="dnlv-positions__now__en dnlv-opened">Chief Technical Officer of <a href="http://www.ningengroup.com/" class="dnlv-link">Ningen Group</a></span>
+				<span class="dnlv-positions__now__ru dnlv-closed">Технический директор в <a href="http://www.ningengroup.com/" class="dnlv-link">Ningen Group</a></span>
+			</div>
+			<div class="dnlv-positions__before">
+				<span class="dnlv-positions__before__en dnlv-opened">Freelancer</span>
+				<span class="dnlv-positions__before__ru dnlv-closed">Фрилансер</span>
+			</div>
+		</div>
+		<div class="dnlv-contacts">
+			<span class="dnlv-contacts__email">e-mail: <a href="mailto:michael@danilov.me" class="dnlv-link">michael@danilov.me</a></span>
+			<span class="dnlv-contacts__jabber">xmpp: <a href="xmpp:michael@danilov.me" class="dnlv-link">michael@danilov.me</a></span>
+		</div>
+		<div class="dnlv-social">
+			<span class="dnlv-social__vk"><a href="http://vk.com/michael.danilov" class="dnlv-link">vk</a></span>
+			 ∙ 
+			<span class="dnlv-social__twitter"><a href="http://twitter.com/MonkAlbino" class="dnlv-link">twitter</a></span>
+			 ∙ 
+			<span class="dnlv-social__fb"><a href="http://fb.me/michael.danilov" class="dnlv-link">fb</a></span>
+			 ∙ 
+			<span class="dnlv-social__other"><a href="http://albino.su/" class="dnlv-link">...</a></span>
+		</div>
+	</div>
+	
+<!-- Yandex.Metrika -->
+<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+<div style="display:none;"><script type="text/javascript">
+try { var yaCounter990590 = new Ya.Metrika(990590); } catch(e){}
+</script></div>
+<noscript><div style="position:absolute"><img src="//mc.yandex.ru/watch/990590"  alt="" /></div></noscript>
+<!-- /Yandex.Metrika -->
+</body>
+</html>
