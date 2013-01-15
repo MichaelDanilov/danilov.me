@@ -1,0 +1,33 @@
+/* English version */
+
+    /* TEAM */
+    Host, developer: Michael Danilov.
+    Site: http://danilov.me/
+    Email: michael@danilov.me
+    Twitter: @MonkAlbino
+    Location: Omsk, Russia.
+    Languages: Russian, English.
+
+    /* SITE */
+    Last update: 2013/01/15.
+    Standards: HTML5, hCard.
+    Components: jQuery, BEM.
+    Software for site: Ubuntu, Apache, Nginx.
+    Software for development: Windows, Sublime Text, Git.
+
+/* Русская версия */
+
+    /* КОМАНДА */
+    Хозяин, разработчик: Михаил Данилов.
+    Сайт: http://danilov.me/
+    Электронная почта: michael@danilov.me
+    Twitter: @MonkAlbino
+    Место жительства: Омск, Россия.
+    Языки: русский, английский.
+
+    /* Сайт */
+    Последнее обновление: 15.01.2013.
+    Стандарты: HTML5, hCard.
+    Компоненты: jQuery, БЭМ.
+    Программное обеспечение для сайта: Ubuntu, Apache, Nginx.
+    Программное обеспечение для разработки: Windows, Sublime Text, Git.
