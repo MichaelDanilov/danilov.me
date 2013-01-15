@@ -17,8 +17,12 @@
 				$(".dnlv-positions__before__ru").removeClass("dnlv-closed").addClass("dnlv-opened");
 				$(".dnlv-contacts__tel__en").removeClass("dnlv-opened").addClass("dnlv-closed");
 				$(".dnlv-contacts__tel__ru").removeClass("dnlv-closed").addClass("dnlv-opened");
-				$(".dnlv-contacts__email__en").removeClass("dnlv-opened").addClass("dnlv-closed");
-				$(".dnlv-contacts__email__ru").removeClass("dnlv-closed").addClass("dnlv-opened");
+				$(".dnlv-contacts__personal-email__en").removeClass("dnlv-opened").addClass("dnlv-closed");
+				$(".dnlv-contacts__personal-email__ru").removeClass("dnlv-closed").addClass("dnlv-opened");
+				$(".dnlv-contacts__personal-xmpp__en").removeClass("dnlv-opened").addClass("dnlv-closed");
+				$(".dnlv-contacts__personal-xmpp__ru").removeClass("dnlv-closed").addClass("dnlv-opened");
+				$(".dnlv-contacts__work-email__en").removeClass("dnlv-opened").addClass("dnlv-closed");
+				$(".dnlv-contacts__work-email__ru").removeClass("dnlv-closed").addClass("dnlv-opened");
 			});
 			$(".dnlv-lang__en").click(function() {
 				$(".dnlv-name__ru").removeClass("dnlv-opened").addClass("dnlv-closed");
@@ -29,8 +33,12 @@
 				$(".dnlv-positions__before__en").removeClass("dnlv-closed").addClass("dnlv-opened");
 				$(".dnlv-contacts__tel__ru").removeClass("dnlv-opened").addClass("dnlv-closed");
 				$(".dnlv-contacts__tel__en").removeClass("dnlv-closed").addClass("dnlv-opened");
-				$(".dnlv-contacts__email__ru").removeClass("dnlv-opened").addClass("dnlv-closed");
-				$(".dnlv-contacts__email__en").removeClass("dnlv-closed").addClass("dnlv-opened");
+				$(".dnlv-contacts__personal-email__ru").removeClass("dnlv-opened").addClass("dnlv-closed");
+				$(".dnlv-contacts__personal-email__en").removeClass("dnlv-closed").addClass("dnlv-opened");
+				$(".dnlv-contacts__personal-xmpp__ru").removeClass("dnlv-opened").addClass("dnlv-closed");
+				$(".dnlv-contacts__personal-xmpp__en").removeClass("dnlv-closed").addClass("dnlv-opened");
+				$(".dnlv-contacts__work-email__ru").removeClass("dnlv-opened").addClass("dnlv-closed");
+				$(".dnlv-contacts__work-email__en").removeClass("dnlv-closed").addClass("dnlv-opened");
 			});
 		});
 	</script>
@@ -50,11 +58,11 @@
 		}
 		.dnlv-card {
 			font: 16px/20px 'Helvetica Neue',Helvetica,Arial;
-			height: 190px;
-			width: 300px;
+			height: 205px;
+			width: 335px;
 			left: 50%;
 			top: 50%;
-			margin: -95px 0 0 -150px;
+			margin: -102.5px 0 0 -167.5px;
 			position: absolute;
 			text-align: center;
 		}
@@ -127,12 +135,21 @@
 				<span class="dnlv-contacts__tel__ru dnlv-closed">Тел.:</span>
 				<a href="tel:79609808238" class="dnlv-link tel">+7 960 980 8238</a>
 			</div>
-			<div class="dnlv-contacts__email">
-				<span class="dnlv-contacts__email__en dnlv-opened">E-mail:</span>
-				<span class="dnlv-contacts__email__ru dnlv-closed">Эл. почта:</span>
+			<div class="dnlv-contacts__personal-email">
+				<span class="dnlv-contacts__personal-email__en dnlv-opened">Personal e-mail:</span>
+				<span class="dnlv-contacts__personal-email__ru dnlv-closed">Личная эл. почта:</span>
 				<a href="mailto:michael@danilov.me" class="dnlv-link email">michael@danilov.me</a>
 			</div>
-			<span class="dnlv-contacts__jabber">Xmpp: <a href="xmpp:michael@danilov.me" class="dnlv-link">michael@danilov.me</a></span>
+			<div class="dnlv-contacts__personal-xmpp">
+				<span class="dnlv-contacts__personal-xmpp__en dnlv-opened">Personal xmpp:</span>
+				<span class="dnlv-contacts__personal-xmpp__ru dnlv-closed">Личный xmpp:</span>
+				<a href="xmpp:michael@danilov.me" class="dnlv-link xmpp">michael@danilov.me</a>
+			</div>
+			<div class="dnlv-contacts__work-email">
+				<span class="dnlv-contacts__work-email__en dnlv-opened">Work e-mail:</span>
+				<span class="dnlv-contacts__work-email__ru dnlv-closed">Рабочая эл. почта:</span>
+				<a href="mailto:danilov@ningengroup.com" class="dnlv-link email">danilov@ningengroup.com</a>
+			</div>
 		</div>
 		<div class="dnlv-social">
 			<span class="dnlv-social__vk"><a href="http://vk.com/michael.danilov" class="dnlv-link">vk</a></span>
