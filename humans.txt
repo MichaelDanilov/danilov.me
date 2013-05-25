@@ -9,8 +9,8 @@
     Languages: Russian, English.
 
     /* SITE */
-    Last update: 2013/05/15.
-    Standards: HTML5, hCard.
+    Last update: 2013/05/25.
+    Standards: HTML5, hCard, OpenID.
     Components: jQuery, BEM.
     Software for site: Ubuntu, Nginx.
     Software for development: Windows, Sublime Text, Git.
@@ -26,8 +26,8 @@
     Языки: русский, английский.
 
     /* Сайт */
-    Последнее обновление: 15.05.2013.
-    Стандарты: HTML5, hCard.
+    Последнее обновление: 25.05.2013.
+    Стандарты: HTML5, hCard, OpenID.
     Компоненты: jQuery, БЭМ.
     Программное обеспечение для сайта: Ubuntu, Nginx.
     Программное обеспечение для разработки: Windows, Sublime Text, Git.
