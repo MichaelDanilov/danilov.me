@@ -9,7 +9,7 @@
     Languages: Russian, English.
 
     /* SITE */
-    Last update: 2013/05/25.
+    Last update: 2014/05/23.
     Standards: HTML5, hCard, OpenID.
     Components: jQuery, BEM.
     Software for site: Ubuntu, Nginx.
@@ -17,7 +17,7 @@
 
 /* Русская версия */
 
-    /* КОМАНДА */
+    /* Команда */
     Хозяин, разработчик: Михаил Данилов.
     Сайт: http://danilov.me/
     Электронная почта: michael@danilov.me
@@ -26,7 +26,7 @@
     Языки: русский, английский.
 
     /* Сайт */
-    Последнее обновление: 25.05.2013.
+    Последнее обновление: 23.05.2014.
     Стандарты: HTML5, hCard, OpenID.
     Компоненты: jQuery, БЭМ.
     Программное обеспечение для сайта: Ubuntu, Nginx.
