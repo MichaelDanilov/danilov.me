@@ -1,25 +1,21 @@
-body {
-  min-width: 1200px;
+/*body {
+  min-width: 900px;
+}*/
+.g-c_12 {
+  width: 900px;
 }
-.dnlv-container_16 {
-	width: 1200px;
-}
-.dnlv-grid_1,
-.dnlv-grid_2,
-.dnlv-grid_3,
-.dnlv-grid_4,
-.dnlv-grid_5,
-.dnlv-grid_6,
-.dnlv-grid_7,
-.dnlv-grid_8,
-.dnlv-grid_9,
-.dnlv-grid_10,
-.dnlv-grid_11,
-.dnlv-grid_12,
-.dnlv-grid_13,
-.dnlv-grid_14,
-.dnlv-grid_15,
-.dnlv-grid_16 {
+.g_1,
+.g_2,
+.g_3,
+.g_4,
+.g_5,
+.g_6,
+.g_7,
+.g_8,
+.g_9,
+.g_10,
+.g_11,
+.g_12 {
   display:inline;
   float: left;
   position: relative;
@@ -27,55 +23,43 @@ body {
   margin-right: 0px;
   overflow: hidden;
 }
-.dnlv-container_16 .dnlv-grid_1 {
+.g-c_12 .g_1 {
   width:75px;
 }
-.dnlv-container_16 .dnlv-grid_2 {
+.g-c_12 .g_2 {
   width:150px;
 }
-.dnlv-container_16 .dnlv-grid_3 {
+.g-c_12 .g_3 {
   width:225px;
 }
-.dnlv-container_16 .dnlv-grid_4 {
+.g-c_12 .g_4 {
   width:300px;
 }
-.dnlv-container_16 .dnlv-grid_5 {
+.g-c_12 .g_5 {
   width:375px;
 }
-.dnlv-container_16 .dnlv-grid_6 {
+.g-c_12 .g_6 {
   width:450px;
 }
-.dnlv-container_16 .dnlv-grid_7 {
+.g-c_12 .g_7 {
   width:525px;
 }
-.dnlv-container_16 .dnlv-grid_8 {
+.g-c_12 .g_8 {
   width:600px;
 }
-.dnlv-container_16 .dnlv-grid_9 {
+.g-c_12 .g_9 {
   width:675px;
 }
-.dnlv-container_16 .dnlv-grid_10 {
+.g-c_12 .g_10 {
   width:750px;
 }
-.dnlv-container_16 .dnlv-grid_11 {
+.g-c_12 .g_11 {
   width:825px;
 }
-.dnlv-container_16 .dnlv-grid_12 {
+.g-c_12 .g_12 {
   width:900px;
 }
-.dnlv-container_16 .dnlv-grid_13 {
-  width:975px;
-}
-.dnlv-container_16 .dnlv-grid_14 {
-  width:1050px;
-}
-.dnlv-container_16 .dnlv-grid_15 {
-  width:1125px;
-}
-.dnlv-container_16 .dnlv-grid_16 {
-  width:1200px;
-}
-.dnlv-clear {
+.g-clear {
   clear: both;
   display: block;
   overflow: hidden;
@@ -83,12 +67,28 @@ body {
   width: 0;
   height: 0;
 }
-.dnlv-row_1 {
+.g-clearfix:before,
+.g-clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.g-clearfix:after {
+  clear: both;
+}
+.g-clearfix {
+  zoom: 1;
+}
+.g-r_1 {
   height: 150px;
 }
-.dnlv-row_2 {
+.g-r_2 {
   height: 300px;
 }
-.dnlv-row_3 {
+.g-r_3 {
   height: 450px;
 }
+ g-r_3
