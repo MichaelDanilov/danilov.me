@@ -147,21 +147,30 @@ body {
 .dnlv-text_notopmargin {
   margin-top: 0;
 }
-.dnlv-icon_phone__wrapper {
+.dnlv-icon__text {
+  text-align: center;
+}
+.dnlv-icon__wrapper {
   border-radius: 25px;
+  display: inline-block;
   height: 50px;
-  margin: 0 auto;
+  margin-right: 20px;
+  vertical-align: top;
   width: 50px;
+}
+.dnlv-icon__wrapper:last-child {
+  margin-right: 0;
 }
 .dnlv-icon i.dnlv-icon_phone {
   display: block;
   line-height: 50px;
 }
-.dnlv-text_phone {
-  font: 36px 'Cabin',Helvetica,sans-serif;
-  text-decoration: none;
+.dnlv-icon i.dnlv-icon_contact {
+  display: block;
+  font-size: 30px;
+  line-height: 50px;
 }
-.dnlv-text_email {
+.dnlv-texts {
   font: 16px 'Cabin',Helvetica,sans-serif;
   text-decoration: none;
 }
