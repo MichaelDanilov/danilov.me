@@ -9,7 +9,7 @@
     Languages: Russian, English.
 
     /* SITE */
-    Last update: 2014/05/23.
+    Last update: 2014/05/27.
     Standards: HTML5, hCard, OpenID.
     Components: jQuery, BEM.
     Software for site: Ubuntu, Nginx.
@@ -26,7 +26,7 @@
     Языки: русский, английский.
 
     /* Сайт */
-    Последнее обновление: 23.05.2014.
+    Последнее обновление: 27.05.2014.
     Стандарты: HTML5, hCard, OpenID.
     Компоненты: jQuery, БЭМ.
     Программное обеспечение для сайта: Ubuntu, Nginx.
