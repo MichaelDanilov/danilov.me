@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-<head>
+<head prefix="og: http://ogp.me/ns/profile#">
 	<meta charset="UTF-8">
 	<title>Michael Danilov</title>
 	<link rel="image/x-icon" href="/favicon.ico">
@@ -14,19 +14,30 @@
 	<link rel="openid.server" href="http://openid.yandex.ru/server/" />
 	<link rel="openid2.provider" href="http://openid.yandex.ru/server/" />
 	<link rel="openid.delegate" href="http://openid.yandex.ru/monk-albino/" />
-	<link rel="openid2.local_id" href="http://openid.yandex.ru/monk-albino/" /> 
+	<link rel="openid2.local_id" href="http://openid.yandex.ru/monk-albino/" />
+	<meta property="og:type" content="profile" />
+	<meta property="profile:first_name" content="Michael" />
+	<meta property="profile:last_name" content="Danilov" />
+	<meta property="profile:username" content="MonkAlbino" />
+	<meta property="profile:gender" content="male" />
 </head>
 <body id="hcard-Michael-Danilov" class="dnlv-body vcard">
-	<div class="g-c_12 dnlv-body__wrapper g-clearfix">
+	<div class="g-c_12 dnlv-body__wrapper g-clearfix" itemscope itemtype="http://schema.org/Person">
 		<section class="g_8">
 			<header class="g_8">
 				<nav>
-					<a href="https://danilov.me" class="g_2 g-r_1 dnlv-color_16a5d7" title="Return to the same page :)">
+					<a href="https://danilov.me" class="g_2 g-r_1 dnlv-color_16a5d7" title="Return to the same page :)" itemprop="url">
 						<img class="photo" src="https://danilov.me/michaeldanilov.jpg" alt="Michael Danilov">
 					</a>
 					<a href="https://danilov.me" class="g_6 g-r_1 dnlv-color_16a5d7 dnlv-name__wrap url" title="Return to the same page :)">
-						<h2 class="dnlv-name fn">Michael <br>Danilov</h2>
-						<h3 class="dnlv-position">Web-developer</h3>
+						<h2 class="dnlv-name fn name" itemprop="name">Michael <br>Danilov</h2>
+						<h3 class="dnlv-position title" itemprop="jobTitle">Web-developer</h3>
+						<div class="dnlv-hide nickname">MonkAlbino</div>
+						<div class="dnlv-hide" itemscope itemtype="http://schema.org/Organization"><span class="affiliation" itemprop="name">Ningen Group</span></div>
+						<div class="dnlv-hide adr" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+							<span class="locality" itemprop="addressLocality">Omsk</span>
+							<span class="country-name" itemprop="addressCountry">Russia</span>
+						</div>
 					</a>
 				</nav>
 			</header>
@@ -37,9 +48,9 @@
 					<div class="dnlv-icon__wrapper dnlv-color_50c0e9 dnlv-icon"><i class="dnlv-icon_contact"></i></div>
 				</div>
 				<p class="dnlv-text dnlv-text_mt14">
-					<span class="dnlv-texts">personal phone: <a href="callto:+79609808238" class="dnlv-text_3b5999 tel" title="My contact phone">+7 960 980 8238</a></span><br>
-					<span class="dnlv-texts">personal email: <a href="mailto:michael@danilov.me" class="dnlv-text_3b5999 email" title="My contact email">michael@danilov.me</a></span><br>
-					<span class="dnlv-texts">work email: <a href="mailto:danilov@ningen.gr" class="dnlv-text_3b5999 email" title="My work email">danilov@ningen.gr</a></span>
+					<span class="dnlv-texts">personal phone: <a href="callto:+79609808238" class="dnlv-text_3b5999 tel" title="My contact phone" itemprop="telephone">+7 960 980 8238</a></span><br>
+					<span class="dnlv-texts">personal email: <a href="mailto:michael@danilov.me" class="dnlv-text_3b5999 email" title="My contact email" itemprop="email">michael@danilov.me</a></span><br>
+					<span class="dnlv-texts">work email: <a href="mailto:danilov@ningen.gr" class="dnlv-text_3b5999 email" title="My work email" itemprop="email">danilov@ningen.gr</a></span>
 				</p>
 			</article>
 		</section>
@@ -59,7 +70,7 @@
 			<a href="https://www.facebook.com/michael.danilov" class="g_2 g-r_1 dnlv-icon dnlv-color_3b5999 dnlv-hover" title="My Facebook. Reblog from VK">
 				<i class="dnlv-icon_fb"></i>
 			</a>
-			<a href="https://plus.google.com/+MichaelDanilov" class="g_2 g-r_1 dnlv-icon dnlv-color_cb2028 dnlv-hover" title="My Google+. No activity">
+			<a href="https://plus.google.com/+MichaelDanilov?rel=author" rel="publisher" class="g_2 g-r_1 dnlv-icon dnlv-color_cb2028 dnlv-hover" title="My Google+. No activity">
 				<i class="dnlv-icon_gplus"></i>
 			</a>
 		</aside>

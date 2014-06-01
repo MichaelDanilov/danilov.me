@@ -178,7 +178,7 @@ body {
   margin-top: 14px;
 }
 .dnlv-hide {
-  display: block;
+  display: none;
 }
 @media (min-width: 600px) and (max-width: 900px) {
   body {

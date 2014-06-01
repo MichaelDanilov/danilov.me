@@ -10,8 +10,8 @@
 
     /* SITE */
     Last update: 2014/06/01.
-    Standards: HTML5, hCard, OpenID.
-    Components: jQuery, BEM.
+    Standards: hCard, OpenGraph, Schema.org, OpenID.
+    Components: my vision of BEM :)
     Software for site: Ubuntu, Nginx.
     Software for development: Windows, Sublime Text, Git.
 
@@ -27,7 +27,7 @@
 
     /* Сайт */
     Последнее обновление: 01.06.2014.
-    Стандарты: HTML5, hCard, OpenID.
-    Компоненты: jQuery, БЭМ.
+    Стандарты: hCard, OpenGraph, Schema.org, OpenID.
+    Компоненты: my vision of BEM :)
     Программное обеспечение для сайта: Ubuntu, Nginx.
     Программное обеспечение для разработки: Windows, Sublime Text, Git.
