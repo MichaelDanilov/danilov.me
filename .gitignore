@@ -21,4 +21,7 @@ node_modules/
 # Output of 'npm pack'
 *.tgz
 
+.cache
+public
+
 # End of https://www.gitignore.io/api/node

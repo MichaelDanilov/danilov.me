@@ -5,7 +5,7 @@
   "homepage": "https://github.com/MichaelDanilov/danilov.me",
   "scripts": {
     "lint": "npm run lint:js && npm run spellcheck",
-    "lint:js": "./node_modules/.bin/eslint *.js */*.js",
+    "lint:js": "./node_modules/.bin/eslint",
     "spellcheck": "./node_modules/.bin/yaspeller *.md"
   },
   "author": {
@@ -15,9 +15,9 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^4.13.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "yaspeller": "^4.0.3"
+    "eslint": "5.10.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "yaspeller": "5.0.1"
   }
 }
