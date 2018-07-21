@@ -1,5 +1,5 @@
-import * as React from 'react';
-import styled from 'styled-components';
+import * as React from "react";
+import styled from "styled-components";
 
 const StyledPage = styled.div`
   margin: 0 auto;
@@ -7,12 +7,12 @@ const StyledPage = styled.div`
   max-width: 800px;
 `;
 
-const Page: React.SFC<Props> = ({ children }) => (
+const Page: React.SFC<IProps> = ({ children }) => (
   <StyledPage>{children}</StyledPage>
 );
 
-interface Props {
-  children?: any,
-};
+interface IProps {
+  children?: any;
+}
 
 export default Page;

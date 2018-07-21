@@ -1,9 +1,9 @@
-import * as React from 'react';
-import styled from 'styled-components';
+import * as React from "react";
+import styled from "styled-components";
 
-import data from '../../data/contacts';
+import data from "../../data/contacts";
 
-import { ENGLISH } from '../../constants/languages';
+import { ENGLISH } from "../../constants/languages";
 
 const StyledContacts = styled.div`
   margin: 0;
@@ -21,30 +21,34 @@ const StyledItem = styled.li`
   padding: 0;
 `;
 
-const Contacts: React.SFC<Props> = ({ lang = ENGLISH }) => (
+const renderTypedListItem = (item: IItemProps) => (
+  <React.Fragment>
+    <span>{item.type}</span> - <a href={item.link}>{item.text}</a>
+  </React.Fragment>
+);
+
+const renderListItem = (item: IItemProps, index: number) => (
+  <StyledItem key={index}>
+    {item.text ? renderTypedListItem(item) : <a href={item.link}>{item.type}</a>}
+  </StyledItem>
+);
+
+const Contacts: React.SFC<IProps> = ({ lang = ENGLISH }) => (
   <StyledContacts>
     <StyledList>
-      {
-        data.content[lang].list.map((item: any) => (
-          <StyledItem>
-            {
-              item.text
-                ? (
-                  <React.Fragment>
-                    <span>{item.type}</span> - <a href={item.link}>{item.text}</a>
-                  </React.Fragment>
-                  )
-                : <a href={item.link}>{item.type}</a>
-            }
-          </StyledItem>
-        ))
-      }
+      {data.content[lang].list.map(renderListItem)}
     </StyledList>
   </StyledContacts>
 );
 
-interface Props {
-  lang: string,
-};
+interface IProps {
+  lang: string;
+}
+
+interface IItemProps {
+  link: string;
+  text?: string;
+  type: string;
+}
 
 export default Contacts;

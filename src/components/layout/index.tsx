@@ -1,15 +1,15 @@
-import * as React from 'react';
+import * as React from "react";
 
-import './styles';
+import "./styles";
 
-const Layout = ({ children }: Props) => (
+const Layout = ({ children }: IProps) => (
   <React.Fragment>
     {children}
   </React.Fragment>
 );
 
-interface Props {
-  children: any
-};
+interface IProps {
+  children: any;
+}
 
 export default Layout;

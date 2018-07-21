@@ -1,18 +1,18 @@
-import * as React from 'react';
-import Helmet from 'react-helmet';
+import * as React from "react";
+import Helmet from "react-helmet";
 
-import Layout from '../layout';
-import Header from '../header';
-import Navigation from '../navigation';
-import Page from '../page';
+import Header from "../header";
+import Layout from "../layout";
+import Navigation from "../navigation";
+import Page from "../page";
 
-import defaultMeta from '../../data/meta';
-import navigation from '../../data/navigation';
+import defaultMeta from "../../data/meta";
+import navigation from "../../data/navigation";
 
-import { ENGLISH } from '../../constants/languages';
+import { ENGLISH } from "../../constants/languages";
 
 // eslint-disable-next-line object-curly-newline
-const PageWrapper: React.SFC<Props> = ({ children, headerAbout = '', meta = {}, lang = ENGLISH }) => {
+const PageWrapper: React.SFC<IProps> = ({ children, headerAbout = "", meta = {}, lang = ENGLISH }) => {
   const nav = navigation[lang];
   const resultMeta = {
     ...{
@@ -25,14 +25,16 @@ const PageWrapper: React.SFC<Props> = ({ children, headerAbout = '', meta = {}, 
     },
   };
 
+  const helmetMeta = [
+    { name: "description", content: resultMeta.description },
+    { name: "keywords", content: resultMeta.keywords },
+  ];
+
   return (
     <Layout>
       <Helmet
         title={resultMeta.title}
-        meta={[
-          { name: 'description', content: resultMeta.description },
-          { name: 'keywords', content: resultMeta.keywords },
-        ]}
+        meta={helmetMeta}
       />
       <Page>
         <Header about={headerAbout} lang={lang} />
@@ -44,16 +46,16 @@ const PageWrapper: React.SFC<Props> = ({ children, headerAbout = '', meta = {}, 
 };
 
 interface IMeta {
-  description?: string,
-  keywords?: string,
-  title?: string,
-};
+  description?: string;
+  keywords?: string;
+  title?: string;
+}
 
-interface Props {
-  lang: string,
-  meta: IMeta,
-  children: any,
-  headerAbout?: string,
-};
+interface IProps {
+  lang: string;
+  meta: IMeta;
+  children: any;
+  headerAbout?: string;
+}
 
 export default PageWrapper;

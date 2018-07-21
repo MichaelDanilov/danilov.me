@@ -1,17 +1,17 @@
-import * as React from 'react';
-import styled from 'styled-components';
+import * as React from "react";
+import styled from "styled-components";
 
-import Paragraph from '../../components/paragraph';
-import data from '../../data/error';
+import Paragraph from "../../components/paragraph";
+import data from "../../data/error";
 
-import { ENGLISH } from '../../constants/languages';
+import { ENGLISH } from "../../constants/languages";
 
-const Error: React.SFC<Props> = ({ lang = ENGLISH }) => (
+const Error: React.SFC<IProps> = ({ lang = ENGLISH }) => (
   <Paragraph paragraphs={data.content[lang]} />
 );
 
-interface Props {
-  lang: string,
-};
+interface IProps {
+  lang: string;
+}
 
 export default Error;
