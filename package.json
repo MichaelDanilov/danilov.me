@@ -12,6 +12,7 @@
     "email": "michael@danilov.me"
   },
   "scripts": {
+    "clean": "rm -rf ./node_modules ./public",
     "build": "./node_modules/.bin/gatsby build",
     "develop": "NODE_PATH=./ ./node_modules/.bin/gatsby develop",
     "lint:js": "./node_modules/.bin/eslint *.js */*.js",
@@ -49,9 +50,24 @@
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.2",
     "eslint-plugin-react": "7.11.1",
+    "husky": "1.2.0",
+    "lint-staged": "8.1.0",
     "yaspeller": "5.0.1"
   },
   "resolutions": {
     "graphql": "0.13.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "./node_modules/.bin/eslint"
+    ],
+    "*.md": [
+      "./node_modules/.bin/yaspeller"
+    ]
   }
 }
