@@ -1,9 +1,10 @@
 import * as React from "react";
 
-import "./styles";
+import GlobalStyle from "./styles";
 
 const Layout = ({ children }: IProps) => (
   <React.Fragment>
+    <GlobalStyle />
     {children}
   </React.Fragment>
 );

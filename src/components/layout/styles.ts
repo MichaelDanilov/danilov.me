@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 import styles from "../../constants/styles";
 
 // tslint:disable-next-line
-createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
 
@@ -45,3 +45,5 @@ createGlobalStyle`
     }
   }
 `;
+
+export default GlobalStyle;
