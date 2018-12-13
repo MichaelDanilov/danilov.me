@@ -1,10 +1,12 @@
+import michaeldanilov from "michaeldanilov";
+
 // tslint:disable object-literal-sort-keys
 export default {
   title: {
-    en: "Michael Danilov",
-    ru: "Михаил Данилов",
+    en: michaeldanilov.name,
+    ru: michaeldanilov.ru.name,
   },
-  siteUrl: "https://danilov.me",
+  siteUrl: michaeldanilov.homepage,
   description: {
     en: "Personal website of Michael Danilov",
     ru: "Сайт Михаила Данилова",
