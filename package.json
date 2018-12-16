@@ -1,7 +1,7 @@
 {
   "name": "danilov.me",
   "version": "3.0.0",
-  "description": "Michael Danilov",
+  "description": "Personal website of Michael Danilov",
   "homepage": "https://github.com/MichaelDanilov/danilov.me",
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
     "@types/styled-components": "4.1.4",
     "bulma": "0.7.2",
     "gatsby": "2.0.67",
+    "gatsby-plugin-favicon": "3.1.4",
     "gatsby-plugin-react-helmet": "3.0.4",
     "gatsby-plugin-styled-components": "3.0.4",
     "gatsby-plugin-typescript": "2.0.3",

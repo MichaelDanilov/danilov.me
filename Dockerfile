@@ -1,11 +1,14 @@
 FROM node:10-alpine as build
 
+RUN apk update && apk upgrade && apk add git
+
 WORKDIR /app
 
 COPY package*.json ./
-COPY src ./src
 COPY gatsby-config.js .
 COPY tsconfig.json .
+COPY src ./src
+COPY static ./static
 
 RUN npm install --only=production
 RUN npm run build
