@@ -35,7 +35,9 @@ const PageWrapper: React.SFC<IProps> = ({ children, headerAbout = "", meta = {},
       <Helmet
         title={resultMeta.title}
         meta={helmetMeta}
-      />
+      >
+        <link type="text/plain" rel="author" href="/humans.txt" />
+      </Helmet>
       <Page>
         <Header about={headerAbout} lang={lang} />
         <Navigation navigation={nav} />
