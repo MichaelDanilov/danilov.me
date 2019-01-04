@@ -1,41 +1,29 @@
-# Ignore rules
+# Created by https://www.gitignore.io/api/node
 
-*~
-*#*
-._*
-\#*
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
 
-# Compiled source
+# Dependency directories
+node_modules/
 
-*.com
-*.class
-*.dll
-*.exe
-*.a
-*.o
-*.so
-*.lo
-*.bak
-*.iml
-*.out
-a.out
-*.pyc
+# Optional npm cache directory
+.npm
 
-*.tmp
-*.bak
-tmp
+# Optional eslint cache
+.eslintcache
 
-# OS generated files
+# Optional REPL history
+.node_repl_history
 
-.DS_Store*
-ehthumbs.db
-Icon?
-Thumbs.db
+# Output of 'npm pack'
+*.tgz
 
-# Project files
+.cache
+public
 
-.idea
-*.xmind
-*.sublime-project
-*.sublime-workspace
-_*
+# End of https://www.gitignore.io/api/node
+
+public

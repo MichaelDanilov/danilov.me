@@ -1,0 +1,77 @@
+{
+  "name": "danilov.me",
+  "version": "3.0.0",
+  "description": "Personal website of Michael Danilov",
+  "homepage": "https://github.com/MichaelDanilov/danilov.me",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MichaelDanilov/danilov.me.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MichaelDanilov/danilov.me/issues",
+    "email": "michael@danilov.me"
+  },
+  "scripts": {
+    "clean": "rm -rf ./node_modules ./public",
+    "build": "./node_modules/.bin/gatsby build",
+    "develop": "NODE_PATH=./ ./node_modules/.bin/gatsby develop",
+    "lint:js": "./node_modules/.bin/tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "lint": "npm run lint:js && npm run spellcheck",
+    "spellcheck": "./node_modules/.bin/yaspeller *.md",
+    "start": "npm run develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Michael Danilov",
+    "email": "michael@danilov.me",
+    "url": "https://danilov.me/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/react-helmet": "5.0.7",
+    "@types/styled-components": "4.1.4",
+    "bulma": "0.7.2",
+    "gatsby": "2.0.67",
+    "gatsby-plugin-favicon": "3.1.4",
+    "gatsby-plugin-offline": "2.0.19",
+    "gatsby-plugin-react-helmet": "3.0.4",
+    "gatsby-plugin-styled-components": "3.0.4",
+    "gatsby-plugin-typescript": "2.0.3",
+    "graphql": "0.13.2",
+    "lodash": "4.17.11",
+    "michaeldanilov": "1.0.0",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
+    "react-helmet": "5.2.0",
+    "styled-components": "4.1.2",
+    "tslint": "5.11.0",
+    "tslint-react": "3.6.0",
+    "typescript": "3.2.2"
+  },
+  "devDependencies": {
+    "eslint": "5.10.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-react": "7.11.1",
+    "husky": "1.2.0",
+    "lint-staged": "8.1.0",
+    "yaspeller": "5.0.1"
+  },
+  "resolutions": {
+    "graphql": "0.13.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "./node_modules/.bin/tslint -c tslint.json"
+    ],
+    "*.md": [
+      "./node_modules/.bin/yaspeller"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+/* English version */
+
+  /* TEAM */
+  Host, developer: Michael Danilov.
+  Site: https://danilov.me/
+  Email: michael@danilov.me
+  Twitter: @MonkAlbino
+  Location: Omsk, Russia.
+  Languages: Russian, English.
+
+/* Русская версия */
+
+  /* Команда */
+  Автор: Михаил Данилов.
+  Сайт: https://danilov.me/
+  Электронная почта: michael@danilov.me
+  Twitter: @MonkAlbino
+  Место жительства: Омск, Россия.
+  Языки: русский, английский.
