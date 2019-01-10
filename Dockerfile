@@ -14,13 +14,11 @@ RUN npm install --only=production
 RUN npm run build
 
 
-FROM node:10-alpine as release
+FROM nginx:1.15-alpine as release
 
 WORKDIR /app
 
 COPY --from=build /app/public ./
-RUN npm -g install serve
+COPY conf/default.conf /etc/nginx/conf.d/default.conf
 
-
-EXPOSE 8080
-CMD ["serve", ".", "-p", "8080"]
+EXPOSE 80
