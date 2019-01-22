@@ -16,12 +16,12 @@ const PageWrapper: React.SFC<IProps> = ({ children, headerAbout = "", meta = {},
   const nav = navigation[lang];
   const resultMeta = {
     ...{
-      description: defaultMeta.description[ENGLISH],
-      keywords: defaultMeta.keywords[ENGLISH],
+      description: defaultMeta.description[lang],
+      keywords: defaultMeta.keywords[lang],
     },
     ...meta,
     ...{
-      title: meta.title ? `${meta.title} - ${defaultMeta.title[ENGLISH]}` : defaultMeta.title[ENGLISH],
+      title: meta.title ? `${meta.title} - ${defaultMeta.title[lang]}` : defaultMeta.title[lang],
     },
   };
 
@@ -32,10 +32,10 @@ const PageWrapper: React.SFC<IProps> = ({ children, headerAbout = "", meta = {},
 
   return (
     <Layout>
-      <Helmet
-        title={resultMeta.title}
-        meta={helmetMeta}
-      >
+      <Helmet>
+        <html lang={lang} />
+        <title>{resultMeta.title}</title>
+        {helmetMeta.map((hMeta) => <meta key={hMeta.name} name={hMeta.name} content={hMeta.content} />)}
         <link type="text/plain" rel="author" href="/humans.txt" />
       </Helmet>
       <Page>
