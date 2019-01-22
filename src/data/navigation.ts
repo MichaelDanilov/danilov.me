@@ -12,6 +12,7 @@ export default {
     {
       title: "Русская версия",
       href: "/ru",
+      lang: "ru-RU",
     },
   ],
   ru: [
@@ -26,6 +27,7 @@ export default {
     {
       title: "English version",
       href: "/",
+      lang: "en-US",
     },
   ],
 } as any;

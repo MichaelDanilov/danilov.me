@@ -10,16 +10,16 @@ export default {
   content: {
     en: [
       [
-        '<a href="https://jamstack.org/">JAM-stack</a> developer.',
-        'Worked at <a href="https://ningen.group/">Ningen Group</a>, <a href="https://livetyping.com/en/">Live Typing</a>. Temporarily unemployed.',
-        'Living in <a href="https://en.wikipedia.org/wiki/Omsk">Omsk, Russia</a>.',
+        '<a href="https://jamstack.org/" hreflang="en-US">JAM-stack</a> developer.',
+        'Worked at <a href="https://ningen.group/" hreflang="en-US">Ningen Group</a>, <a href="https://livetyping.com/en/" hreflang="en-US">Live Typing</a>. Temporarily unemployed.',
+        'Living in <a href="https://en.wikipedia.org/wiki/Omsk" hreflang="en-US">Omsk, Russia</a>.',
       ].join("<br>"),
     ],
     ru: [
       [
-        '<a href="https://jamstack.org/">JAM-stack</a> разработчик.',
-        'Работал в <a href="https://ningen.group/">Ningen Group</a>, <a href="https://livetyping.com/ru/">Лайв Тайпинге</a>. Временно безработный.',
-        'Живу в <a href="https://ru.wikipedia.org/wiki/Омск">Омске</a>.',
+        '<a href="https://jamstack.org/" hreflang="en-US">JAM-stack</a> разработчик.',
+        'Работал в <a href="https://ningen.group/" hreflang="en-US">Ningen Group</a>, <a href="https://livetyping.com/ru/" hreflang="ru-RU">Лайв Тайпинге</a>. Временно безработный.',
+        'Живу в <a href="https://ru.wikipedia.org/wiki/Омск" hreflang="ru-RU">Омске</a>.',
       ].join("<br>"),
     ],
   },
