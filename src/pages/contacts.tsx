@@ -11,6 +11,7 @@ const ContactsPage: React.SFC = () => (
   <PageWrapper
     meta={{title: data.meta.title[LANG]}}
     lang={LANG}
+    url="/contacts"
   >
     <Contacts lang={LANG} />
   </PageWrapper>

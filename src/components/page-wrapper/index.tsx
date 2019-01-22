@@ -12,7 +12,7 @@ import navigation from "../../data/navigation";
 import { ENGLISH } from "../../constants/languages";
 
 // eslint-disable-next-line object-curly-newline
-const PageWrapper: React.SFC<IProps> = ({ children, headerAbout = "", meta = {}, lang = ENGLISH }) => {
+const PageWrapper: React.SFC<IProps> = ({ children, headerAbout = "", meta = {}, lang = ENGLISH, url = "" }) => {
   const nav = navigation[lang];
   const resultMeta = {
     ...{
@@ -30,12 +30,33 @@ const PageWrapper: React.SFC<IProps> = ({ children, headerAbout = "", meta = {},
     { name: "keywords", content: resultMeta.keywords },
   ];
 
+  const alternateLink = [];
+
+  if (url) {
+    ["en-US", "ru-RU"].forEach((fullLangCode) => {
+      const langCode = fullLangCode.split("-")[0];
+      alternateLink.push({
+        hreflang: fullLangCode,
+        url: langCode === "en" ? url : `/${langCode}${url}`,
+      });
+    });
+  }
+
   return (
     <Layout>
       <Helmet>
         <html lang={lang} />
         <title>{resultMeta.title}</title>
         {helmetMeta.map((hMeta) => <meta key={hMeta.name} name={hMeta.name} content={hMeta.content} />)}
+        {/* tslint:disable jsx-no-multiline-js */}
+        {alternateLink.map((aLink) => (
+          <link
+            key={aLink.hreflang}
+            rel="alternate"
+            hreflang={aLink.hreflang}
+            href={`https://danilov.me${aLink.url}`}
+          />
+        ))}
         <link type="text/plain" rel="author" href="/humans.txt" />
       </Helmet>
       <Page>
@@ -58,6 +79,7 @@ interface IProps {
   meta: IMeta;
   children: any;
   headerAbout?: string;
+  url?: string;
 }
 
 export default PageWrapper;
