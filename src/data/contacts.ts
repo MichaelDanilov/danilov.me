@@ -15,11 +15,6 @@ export default {
           link: "mailto:michael@danilov.me",
         },
         {
-          type: "Beeline Russia",
-          text: "+7 960 980 8238",
-          link: "tel:79609808238",
-        },
-        {
           type: "Telegram",
           text: "@MichaelDanilov",
           link: "https://t.me/MichaelDanilov",
@@ -41,11 +36,6 @@ export default {
           type: "Электронная почта",
           text: "michael@danilov.me",
           link: "mailto:michael@danilov.me",
-        },
-        {
-          type: "Билайн Россия",
-          text: "+7 960 980 8238",
-          link: "tel:79609808238",
         },
         {
           type: "ВКонтакте",
