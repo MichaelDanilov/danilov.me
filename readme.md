@@ -1,16 +1,27 @@
 # danilov.me
+
 Source of personal website of [Michael Danilov](https://danilov.me).
 
-## install && build
+## usage
+
+### install dependencies
+
 ```bash
-nvm use
-rm -rf node_modules public
-npx npm-force-resolutions
-npm i
-npm run build
+nvm use && \
+npm run clean && \
+npm i &&
+rm -rf node_modules/gatsby/node_modules/graphql &&
+ln -s node_modules/graphql node_modules/gatsby/node_modules/graphql
 ```
 
-## run
+### start local server (after installing dependencies)
+
 ```bash
-open https://danilov.me
+npm start
+```
+
+### build to static (after installing dependencies)
+
+```bash
+npm run build
 ```
