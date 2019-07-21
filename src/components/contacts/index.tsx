@@ -38,7 +38,7 @@ const renderListItem = (item: IItemProps, index: number) => (
   </StyledItem>
 );
 
-const Contacts: React.SFC<IProps> = ({ lang = ENGLISH }) => (
+const Contacts = ({ lang = ENGLISH }: IProps) => (
   <StyledContacts>
     <StyledList>{data.content[lang].list.map(renderListItem)}</StyledList>
   </StyledContacts>

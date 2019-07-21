@@ -11,7 +11,7 @@ const StyledContent = styled.p`
   padding: 0;
 `;
 
-const Paragraph: React.SFC<IProps> = ({ paragraphs = [] }) => (
+const Paragraph = ({ paragraphs = [] }: IProps) => (
   <StyledParagraph>
     {paragraphs.map((p, i) => (
       // eslint-disable-next-line react/no-array-index-key

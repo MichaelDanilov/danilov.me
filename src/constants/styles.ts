@@ -1,7 +1,6 @@
 export default {
   backgroundColor: 'hsl(0, 0%, 100%)',
   color: 'hsl(0, 0%, 4%)',
-  // tslint:disable-next-line
   fontFamily:
     'BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif',
   fontSize: '16px',

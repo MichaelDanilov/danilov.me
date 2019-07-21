@@ -20,7 +20,7 @@ const StyledNavigationItem = styled.li`
   }
 `;
 
-const renderNavigationItem = ({ href = '', title = '', lang = null }) => (
+const renderNavigationItem = ({ href = '', title = '', lang }: INavigation) => (
   <StyledNavigationItem key={href}>
     <Link to={href} hrefLang={lang} lang={lang}>
       {title}
@@ -28,7 +28,7 @@ const renderNavigationItem = ({ href = '', title = '', lang = null }) => (
   </StyledNavigationItem>
 );
 
-const Navigation: React.SFC<IProps> = ({ navigation = [] }) => (
+const Navigation = ({ navigation = [] }: IProps) => (
   <StyledNavigationList>
     {navigation.map(renderNavigationItem)}
   </StyledNavigationList>
@@ -37,7 +37,7 @@ const Navigation: React.SFC<IProps> = ({ navigation = [] }) => (
 interface INavigation {
   title: string;
   href: string;
-  lang?: string | null;
+  lang?: string;
 }
 
 interface IProps {

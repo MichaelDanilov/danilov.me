@@ -5,7 +5,7 @@ import data from '../../data/error';
 
 import { ENGLISH } from '../../constants/languages';
 
-const Error: React.SFC<IProps> = ({ lang = ENGLISH }) => (
+const Error = ({ lang = ENGLISH }: IProps) => (
   <Paragraph paragraphs={data.content[lang]} />
 );
 

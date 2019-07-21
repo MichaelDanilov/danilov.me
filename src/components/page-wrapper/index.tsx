@@ -12,13 +12,13 @@ import navigation from '../../data/navigation';
 import { ENGLISH } from '../../constants/languages';
 
 // eslint-disable-next-line object-curly-newline
-const PageWrapper: React.SFC<IProps> = ({
+const PageWrapper = ({
   children,
   headerAbout = '',
   meta = {},
   lang = ENGLISH,
   url = '',
-}) => {
+}: IProps) => {
   const nav = navigation[lang];
   const resultMeta = {
     ...{
@@ -58,7 +58,6 @@ const PageWrapper: React.SFC<IProps> = ({
         {helmetMeta.map(hMeta => (
           <meta key={hMeta.name} name={hMeta.name} content={hMeta.content} />
         ))}
-        {/* tslint:disable jsx-no-multiline-js */}
         {alternateLink.map(aLink => (
           <link
             key={aLink.hreflang}

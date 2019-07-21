@@ -16,7 +16,7 @@ const StyledAbout = styled.p`
   padding: 0;
 `;
 
-const Header: React.SFC<IProps> = ({ about = '', lang = ENGLISH }) => (
+const Header = ({ about = '', lang = ENGLISH }: IProps) => (
   <React.Fragment>
     <StyledTitle>{header.name[lang]}</StyledTitle>
     {about ? <StyledAbout dangerouslySetInnerHTML={{ __html: about }} /> : null}

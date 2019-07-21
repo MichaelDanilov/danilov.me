@@ -1,5 +1,3 @@
-// tslint:disable object-literal-sort-keys
-// tslint:disable max-line-length
 export default {
   meta: {
     title: {
