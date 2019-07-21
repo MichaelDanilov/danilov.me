@@ -3,11 +3,12 @@
     "jsx": "react",
     "lib": ["dom", "es2015", "es2017"],
     "module": "commonjs",
-    "noImplicitAny": true,
     "outDir": "./dist/",
-    "resolveJsonModule": true,
+    "target": "esnext",
     "sourceMap": true,
-    "target": "esnext"
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true
   },
   "include": ["./src/**/*"]
 }

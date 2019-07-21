@@ -1,4 +1,12 @@
 {
+  "excludeFiles": [
+    ".git",
+    "yaspeller",
+    "node_modules"
+  ],
+  "fileExtensions": [
+    ".md"
+  ],
   "lang": "en",
   "ignoreCapitalization": true,
   "dictionary": [
