@@ -1,5 +1,5 @@
-import * as React from "react";
-import styled from "styled-components";
+import * as React from 'react';
+import styled from 'styled-components';
 
 const StyledParagraph = styled.div`
   margin: 0;
@@ -13,7 +13,10 @@ const StyledContent = styled.p`
 
 const Paragraph: React.SFC<IProps> = ({ paragraphs = [] }) => (
   <StyledParagraph>
-    {paragraphs.map((p, i) => <StyledContent key={i} dangerouslySetInnerHTML={{ __html: p }} />)}
+    {paragraphs.map((p, i) => (
+      // eslint-disable-next-line react/no-array-index-key
+      <StyledContent key={i} dangerouslySetInnerHTML={{ __html: p }} />
+    ))}
   </StyledParagraph>
 );
 

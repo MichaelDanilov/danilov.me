@@ -1,7 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
 
-import YaMetrika from "../yaMetrika";
-import GlobalStyle from "./styles";
+import YaMetrika from '../yaMetrika';
+import GlobalStyle from './styles';
 
 const Layout = ({ children }: IProps) => (
   <React.Fragment>

@@ -1,4 +1,4 @@
-import michaeldanilov from "michaeldanilov";
+import michaeldanilov from 'michaeldanilov';
 
 // tslint:disable object-literal-sort-keys
 export default {

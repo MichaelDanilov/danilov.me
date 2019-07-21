@@ -1,9 +1,9 @@
-import * as React from "react";
-import styled from "styled-components";
+import * as React from 'react';
+import styled from 'styled-components';
 
-import header from "../../data/header";
+import header from '../../data/header';
 
-import { ENGLISH } from "../../constants/languages";
+import { ENGLISH } from '../../constants/languages';
 
 const StyledTitle = styled.h1`
   font-size: 3rem;
@@ -16,7 +16,7 @@ const StyledAbout = styled.p`
   padding: 0;
 `;
 
-const Header: React.SFC<IProps> = ({ about = "", lang = ENGLISH }) => (
+const Header: React.SFC<IProps> = ({ about = '', lang = ENGLISH }) => (
   <React.Fragment>
     <StyledTitle>{header.name[lang]}</StyledTitle>
     {about ? <StyledAbout dangerouslySetInnerHTML={{ __html: about }} /> : null}

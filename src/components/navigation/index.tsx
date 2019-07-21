@@ -1,6 +1,6 @@
-import { Link } from "gatsby";
-import * as React from "react";
-import styled from "styled-components";
+import { Link } from 'gatsby';
+import * as React from 'react';
+import styled from 'styled-components';
 
 const StyledNavigationList = styled.ul`
   list-style: none;
@@ -20,9 +20,11 @@ const StyledNavigationItem = styled.li`
   }
 `;
 
-const renderNavigationItem = ({ href = "", title = "", lang = null }) => (
+const renderNavigationItem = ({ href = '', title = '', lang = null }) => (
   <StyledNavigationItem key={href}>
-    <Link to={href} hrefLang={lang} lang={lang}>{title}</Link>
+    <Link to={href} hrefLang={lang} lang={lang}>
+      {title}
+    </Link>
   </StyledNavigationItem>
 );
 

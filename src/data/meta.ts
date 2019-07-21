@@ -1,4 +1,4 @@
-import michaeldanilov from "michaeldanilov";
+import michaeldanilov from 'michaeldanilov';
 
 // tslint:disable object-literal-sort-keys
 export default {
@@ -8,11 +8,11 @@ export default {
   },
   siteUrl: michaeldanilov.homepage,
   description: {
-    en: "Personal website of Michael Danilov",
-    ru: "Сайт Михаила Данилова",
+    en: 'Personal website of Michael Danilov',
+    ru: 'Сайт Михаила Данилова',
   },
   keywords: {
-    en: "сайт, michael danilov, monk albino, михаил данилов",
-    ru: "сайт, michael danilov, monk albino, михаил данилов",
+    en: 'сайт, michael danilov, monk albino, михаил данилов',
+    ru: 'сайт, michael danilov, monk albino, михаил данилов',
   },
 } as any;
