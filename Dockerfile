@@ -11,6 +11,8 @@ COPY src ./src
 COPY static ./static
 
 RUN npm install --only=production
+RUN rm -rf node_modules/gatsby/node_modules/graphql
+RUN ln -s node_modules/graphql node_modules/gatsby/node_modules/graphql
 RUN npm run build
 
 

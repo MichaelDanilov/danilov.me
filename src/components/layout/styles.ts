@@ -1,8 +1,7 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
-import styles from "../../constants/styles";
+import styles from '../../constants/styles';
 
-// tslint:disable-next-line
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;

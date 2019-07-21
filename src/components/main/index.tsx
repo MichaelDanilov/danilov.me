@@ -1,12 +1,11 @@
-import * as React from "react";
-import styled from "styled-components";
+import * as React from 'react';
 
-import Paragraph from "../../components/paragraph";
-import data from "../../data/index";
+import Paragraph from '../paragraph';
+import data from '../../data/index';
 
-import { ENGLISH } from "../../constants/languages";
+import { ENGLISH } from '../../constants/languages';
 
-const Main: React.SFC<IProps> = ({ lang = ENGLISH }) => (
+const Main = ({ lang = ENGLISH }: IProps) => (
   <Paragraph paragraphs={data.content[lang]} />
 );
 

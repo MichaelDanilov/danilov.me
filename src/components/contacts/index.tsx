@@ -1,9 +1,9 @@
-import * as React from "react";
-import styled from "styled-components";
+import * as React from 'react';
+import styled from 'styled-components';
 
-import data from "../../data/contacts";
+import data from '../../data/contacts';
 
-import { ENGLISH } from "../../constants/languages";
+import { ENGLISH } from '../../constants/languages';
 
 const StyledContacts = styled.div`
   margin: 0;
@@ -23,21 +23,24 @@ const StyledItem = styled.li`
 
 const renderTypedListItem = (item: IItemProps) => (
   <React.Fragment>
+    {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
     <span>{item.type}</span> - <a href={item.link}>{item.text}</a>
   </React.Fragment>
 );
 
 const renderListItem = (item: IItemProps, index: number) => (
   <StyledItem key={index}>
-    {item.text ? renderTypedListItem(item) : <a href={item.link}>{item.type}</a>}
+    {item.text ? (
+      renderTypedListItem(item)
+    ) : (
+      <a href={item.link}>{item.type}</a>
+    )}
   </StyledItem>
 );
 
-const Contacts: React.SFC<IProps> = ({ lang = ENGLISH }) => (
+const Contacts = ({ lang = ENGLISH }: IProps) => (
   <StyledContacts>
-    <StyledList>
-      {data.content[lang].list.map(renderListItem)}
-    </StyledList>
+    <StyledList>{data.content[lang].list.map(renderListItem)}</StyledList>
   </StyledContacts>
 );
 

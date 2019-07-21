@@ -1,18 +1,24 @@
-import * as React from "react";
-import Helmet from "react-helmet";
+import * as React from 'react';
+import Helmet from 'react-helmet';
 
-import Header from "../header";
-import Layout from "../layout";
-import Navigation from "../navigation";
-import Page from "../page";
+import Header from '../header';
+import Layout from '../layout';
+import Navigation from '../navigation';
+import Page from '../page';
 
-import defaultMeta from "../../data/meta";
-import navigation from "../../data/navigation";
+import defaultMeta from '../../data/meta';
+import navigation from '../../data/navigation';
 
-import { ENGLISH } from "../../constants/languages";
+import { ENGLISH } from '../../constants/languages';
 
 // eslint-disable-next-line object-curly-newline
-const PageWrapper: React.SFC<IProps> = ({ children, headerAbout = "", meta = {}, lang = ENGLISH, url = "" }) => {
+const PageWrapper = ({
+  children,
+  headerAbout = '',
+  meta = {},
+  lang = ENGLISH,
+  url = '',
+}: IProps) => {
   const nav = navigation[lang];
   const resultMeta = {
     ...{
@@ -21,23 +27,25 @@ const PageWrapper: React.SFC<IProps> = ({ children, headerAbout = "", meta = {},
     },
     ...meta,
     ...{
-      title: meta.title ? `${meta.title} - ${defaultMeta.title[lang]}` : defaultMeta.title[lang],
+      title: meta.title
+        ? `${meta.title} - ${defaultMeta.title[lang]}`
+        : defaultMeta.title[lang],
     },
   };
 
   const helmetMeta = [
-    { name: "description", content: resultMeta.description },
-    { name: "keywords", content: resultMeta.keywords },
+    { name: 'description', content: resultMeta.description },
+    { name: 'keywords', content: resultMeta.keywords },
   ];
 
   const alternateLink = [];
 
   if (url) {
-    ["en-US", "ru-RU"].forEach((fullLangCode) => {
-      const langCode = fullLangCode.split("-")[0];
+    ['en-US', 'ru-RU'].forEach(fullLangCode => {
+      const langCode = fullLangCode.split('-')[0];
       alternateLink.push({
         hreflang: fullLangCode,
-        url: langCode === "en" ? url : `/${langCode}${url}`,
+        url: langCode === 'en' ? url : `/${langCode}${url}`,
       });
     });
   }
@@ -47,13 +55,14 @@ const PageWrapper: React.SFC<IProps> = ({ children, headerAbout = "", meta = {},
       <Helmet>
         <html lang={lang} />
         <title>{resultMeta.title}</title>
-        {helmetMeta.map((hMeta) => <meta key={hMeta.name} name={hMeta.name} content={hMeta.content} />)}
-        {/* tslint:disable jsx-no-multiline-js */}
-        {alternateLink.map((aLink) => (
+        {helmetMeta.map(hMeta => (
+          <meta key={hMeta.name} name={hMeta.name} content={hMeta.content} />
+        ))}
+        {alternateLink.map(aLink => (
           <link
             key={aLink.hreflang}
             rel="alternate"
-            hreflang={aLink.hreflang}
+            hrefLang={aLink.hreflang}
             href={`https://danilov.me${aLink.url}`}
           />
         ))}

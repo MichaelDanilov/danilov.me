@@ -1,33 +1,32 @@
-// tslint:disable object-literal-sort-keys
 export default {
   en: [
     {
-      title: "Home",
-      href: "/",
+      title: 'Home',
+      href: '/',
     },
     {
-      title: "Contacts",
-      href: "/contacts",
+      title: 'Contacts',
+      href: '/contacts',
     },
     {
-      title: "Русская версия",
-      href: "/ru",
-      lang: "ru-RU",
+      title: 'Русская версия',
+      href: '/ru',
+      lang: 'ru-RU',
     },
   ],
   ru: [
     {
-      title: "Главная",
-      href: "/ru",
+      title: 'Главная',
+      href: '/ru',
     },
     {
-      title: "Контакты",
-      href: "/ru/contacts",
+      title: 'Контакты',
+      href: '/ru/contacts',
     },
     {
-      title: "English version",
-      href: "/",
-      lang: "en-US",
+      title: 'English version',
+      href: '/',
+      lang: 'en-US',
     },
   ],
 } as any;

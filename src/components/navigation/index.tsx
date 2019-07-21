@@ -1,6 +1,6 @@
-import { Link } from "gatsby";
-import * as React from "react";
-import styled from "styled-components";
+import { Link } from 'gatsby';
+import * as React from 'react';
+import styled from 'styled-components';
 
 const StyledNavigationList = styled.ul`
   list-style: none;
@@ -20,13 +20,15 @@ const StyledNavigationItem = styled.li`
   }
 `;
 
-const renderNavigationItem = ({ href = "", title = "", lang = null }) => (
+const renderNavigationItem = ({ href = '', title = '', lang }: INavigation) => (
   <StyledNavigationItem key={href}>
-    <Link to={href} hrefLang={lang} lang={lang}>{title}</Link>
+    <Link to={href} hrefLang={lang} lang={lang}>
+      {title}
+    </Link>
   </StyledNavigationItem>
 );
 
-const Navigation: React.SFC<IProps> = ({ navigation = [] }) => (
+const Navigation = ({ navigation = [] }: IProps) => (
   <StyledNavigationList>
     {navigation.map(renderNavigationItem)}
   </StyledNavigationList>
@@ -35,7 +37,7 @@ const Navigation: React.SFC<IProps> = ({ navigation = [] }) => (
 interface INavigation {
   title: string;
   href: string;
-  lang?: string | null;
+  lang?: string;
 }
 
 interface IProps {

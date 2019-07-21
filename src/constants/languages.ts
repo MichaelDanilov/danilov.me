@@ -1,7 +1,4 @@
-const ENGLISH: string = "en";
-const RUSSIAN: string = "ru";
+const ENGLISH: string = 'en';
+const RUSSIAN: string = 'ru';
 
-export {
-  ENGLISH,
-  RUSSIAN,
-};
+export { ENGLISH, RUSSIAN };
