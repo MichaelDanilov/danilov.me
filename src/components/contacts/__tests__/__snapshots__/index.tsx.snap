@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contacts english version renders correctly 1`] = `
+<div
+  className="sc-bdVaJa haSphr"
+>
+  <ul
+    className="sc-bwzfXH igcHjc"
+  >
+    <li
+      className="sc-htpNat grGzGL"
+    >
+      <span>
+        Email
+      </span>
+       - 
+      <a
+        href="mailto:michael@danilov.me"
+      >
+        michael@danilov.me
+      </a>
+    </li>
+    <li
+      className="sc-htpNat grGzGL"
+    >
+      <span>
+        Telegram
+      </span>
+       - 
+      <a
+        href="https://t.me/MichaelDanilov"
+      >
+        @MichaelDanilov
+      </a>
+    </li>
+    <li
+      className="sc-htpNat grGzGL"
+    >
+      <span>
+        Twitter
+      </span>
+       - 
+      <a
+        href="https://twitter.com/MonkAlbino"
+      >
+        @MonkAlbino
+      </a>
+    </li>
+    <li
+      className="sc-htpNat grGzGL"
+    >
+      <a
+        href="https://fb.me/michaeldanilov"
+      >
+        Facebook
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Contacts russian version renders correctly 1`] = `
+<div
+  className="sc-bdVaJa haSphr"
+>
+  <ul
+    className="sc-bwzfXH igcHjc"
+  >
+    <li
+      className="sc-htpNat grGzGL"
+    >
+      <span>
+        Электронная почта
+      </span>
+       - 
+      <a
+        href="mailto:michael@danilov.me"
+      >
+        michael@danilov.me
+      </a>
+    </li>
+    <li
+      className="sc-htpNat grGzGL"
+    >
+      <a
+        href="https://vk.me/michael.danilov"
+      >
+        ВКонтакте
+      </a>
+    </li>
+    <li
+      className="sc-htpNat grGzGL"
+    >
+      <span>
+        Twitter
+      </span>
+       - 
+      <a
+        href="https://twitter.com/MonkAlbino"
+      >
+        @MonkAlbino
+      </a>
+    </li>
+    <li
+      className="sc-htpNat grGzGL"
+    >
+      <a
+        href="https://fb.me/michaeldanilov"
+      >
+        Facebook
+      </a>
+    </li>
+  </ul>
+</div>
+`;

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error english version renders correctly 1`] = `
+<div
+  className="sc-bdVaJa haSphr"
+>
+  <p
+    className="sc-bwzfXH jfgEZP"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Looks like, something has gone wrong",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Error russian version renders correctly 1`] = `
+<div
+  className="sc-bdVaJa haSphr"
+>
+  <p
+    className="sc-bwzfXH jfgEZP"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Кажется что-то пошло не так",
+      }
+    }
+  />
+</div>
+`;

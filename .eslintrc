@@ -17,5 +17,10 @@
         "extensions": [".js", ".ts", ".tsx"]
       }
     }
+  },
+  "globals": {
+    "describe": true,
+    "it": true,
+    "expect": true
   }
 }

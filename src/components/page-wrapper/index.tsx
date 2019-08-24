@@ -38,7 +38,7 @@ const PageWrapper = ({
     { name: 'keywords', content: resultMeta.keywords },
   ];
 
-  const alternateLink = [];
+  const alternateLink: Link[] = [];
 
   if (url) {
     ['en-US', 'ru-RU'].forEach(fullLangCode => {
@@ -58,7 +58,7 @@ const PageWrapper = ({
         {helmetMeta.map(hMeta => (
           <meta key={hMeta.name} name={hMeta.name} content={hMeta.content} />
         ))}
-        {alternateLink.map(aLink => (
+        {alternateLink.map((aLink: Link) => (
           <link
             key={aLink.hreflang}
             rel="alternate"
@@ -76,6 +76,11 @@ const PageWrapper = ({
     </Layout>
   );
 };
+
+interface Link {
+  hreflang: string;
+  url: string;
+}
 
 interface IMeta {
   description?: string;
