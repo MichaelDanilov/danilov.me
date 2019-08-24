@@ -19,7 +19,7 @@
     "lint": "npm run lint:js && npm run spellcheck",
     "spellcheck": "./node_modules/.bin/yaspeller *.md",
     "start": "npm run develop",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/jest"
   },
   "author": {
     "name": "Michael Danilov",
@@ -29,6 +29,7 @@
   "license": "MIT",
   "dependencies": {
     "@types/react-helmet": "5.0.9",
+    "@types/react-test-renderer": "16.9.0",
     "@types/styled-components": "4.1.18",
     "acorn": "6.3.0",
     "gatsby": "2.13.82",
@@ -46,6 +47,7 @@
     "typescript": "3.5.3"
   },
   "devDependencies": {
+    "@types/jest": "24.0.18",
     "@typescript-eslint/parser": "1.13.0",
     "eslint": "5.16.0",
     "eslint-config-airbnb": "18.0.1",
@@ -56,8 +58,12 @@
     "eslint-plugin-react": "7.14.3",
     "eslint-plugin-unicorn": "9.1.1",
     "husky": "3.0.4",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "24.9.0",
     "lint-staged": "9.2.3",
     "prettier": "1.18.2",
+    "react-test-renderer": "16.9.0",
+    "ts-jest": "24.0.2",
     "yaspeller": "6.0.0"
   },
   "overrides": {
