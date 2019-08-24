@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 import Contacts from '../../components/contacts';
 import PageWrapper from '../../components/page-wrapper';

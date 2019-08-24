@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import header from '../../data/header';
@@ -17,10 +17,10 @@ const StyledAbout = styled.p`
 `;
 
 const Header = ({ about = '', lang = ENGLISH }: IProps) => (
-  <React.Fragment>
+  <>
     <StyledTitle>{header.name[lang]}</StyledTitle>
     {about ? <StyledAbout dangerouslySetInnerHTML={{ __html: about }} /> : null}
-  </React.Fragment>
+  </>
 );
 
 interface IProps {

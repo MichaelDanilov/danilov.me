@@ -1,18 +1,21 @@
-FROM node:10-alpine as build
+FROM node:11-alpine as build
 
 RUN apk update && apk upgrade && apk add git
 
 WORKDIR /app
 
-COPY package*.json ./
 COPY gatsby-config.js .
-COPY tsconfig.json .
+COPY jest ./jest
+COPY jest.config.js .
+COPY package*.json ./
 COPY src ./src
 COPY static ./static
+COPY tsconfig.json .
 
-RUN npm install --only=production
+RUN npm install
 RUN rm -rf node_modules/gatsby/node_modules/graphql
 RUN ln -s node_modules/graphql node_modules/gatsby/node_modules/graphql
+RUN npm test
 RUN npm run build
 
 

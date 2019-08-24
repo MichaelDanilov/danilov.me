@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 import Error from '../../components/error';
 import PageWrapper from '../../components/page-wrapper';

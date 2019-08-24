@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation renders correctly 1`] = `
+<ul
+  className="sc-bdVaJa hTzUzq"
+/>
+`;
+
+exports[`Navigation with some navigation 1`] = `
+<ul
+  className="sc-bdVaJa hTzUzq"
+>
+  <li
+    className="sc-bwzfXH dmRCrB"
+  >
+    <a
+      href="/https:/example.com"
+      hrefLang="en"
+      lang="en"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      Example.com
+    </a>
+  </li>
+  <li
+    className="sc-bwzfXH dmRCrB"
+  >
+    <a
+      href="/https:/example.net"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      Example.net
+    </a>
+  </li>
+</ul>
+`;

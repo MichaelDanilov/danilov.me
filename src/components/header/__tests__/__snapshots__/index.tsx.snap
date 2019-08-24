@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header add custom about 1`] = `
+Array [
+  <h1
+    className="sc-bdVaJa gyVQum"
+  >
+    Michael Danilov
+  </h1>,
+  <p
+    className="sc-bwzfXH jfgEZP"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Lorem ipsum",
+      }
+    }
+  />,
+]
+`;
+
+exports[`Header english version renders correctly 1`] = `
+<h1
+  className="sc-bdVaJa gyVQum"
+>
+  Michael Danilov
+</h1>
+`;
+
+exports[`Header russian version renders correctly 1`] = `
+<h1
+  className="sc-bdVaJa gyVQum"
+>
+  Михаил Данилов
+</h1>
+`;

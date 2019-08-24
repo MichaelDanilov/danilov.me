@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import data from '../../data/contacts';
@@ -22,10 +22,10 @@ const StyledItem = styled.li`
 `;
 
 const renderTypedListItem = (item: IItemProps) => (
-  <React.Fragment>
+  <>
     {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
     <span>{item.type}</span> - <a href={item.link}>{item.text}</a>
-  </React.Fragment>
+  </>
 );
 
 const renderListItem = (item: IItemProps, index: number) => (
