@@ -24,6 +24,10 @@ FROM nginx:1.15-alpine as release
 WORKDIR /app
 
 COPY --from=build /app/public ./
+COPY conf/nginx.conf /etc/nginx/nginx.conf
 COPY conf/default.conf /etc/nginx/conf.d/default.conf
+RUN ln -sf /dev/stdout /var/log/nginx/access.log
+RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
 EXPOSE 80
+ENTRYPOINT /usr/sbin/nginx -g 'daemon off;'
