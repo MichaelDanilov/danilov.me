@@ -9,9 +9,7 @@ Source of personal website of [Michael Danilov](https://danilov.me).
 ```bash
 nvm use && \
 npm run clean && \
-npm i &&
-rm -rf node_modules/gatsby/node_modules/graphql &&
-ln -s node_modules/graphql node_modules/gatsby/node_modules/graphql
+npm i
 ```
 
 ### start local server (after installing dependencies)

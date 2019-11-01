@@ -19,7 +19,7 @@ const PageWrapper = ({
   lang = Languages.english,
   url = '',
 }: IProps) => {
-  const nav: INavigation[] = navigation[lang];
+  const nav = navigation[lang];
   const resultMeta = {
     ...{
       description: defaultMeta.description[lang],

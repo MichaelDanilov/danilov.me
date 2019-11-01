@@ -13,8 +13,6 @@ COPY static ./static
 COPY tsconfig.json .
 
 RUN npm install
-RUN rm -rf node_modules/gatsby/node_modules/graphql
-RUN ln -s node_modules/graphql node_modules/gatsby/node_modules/graphql
 RUN npm test
 RUN npm run build
 

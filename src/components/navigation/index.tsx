@@ -2,8 +2,6 @@ import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 
-import Languages from '../../constants/languages';
-
 const StyledNavigationList = styled.ul`
   list-style: none;
   margin: 0;
@@ -39,7 +37,7 @@ const Navigation = ({ navigation = [] }: IProps) => (
 export interface INavigation {
   title: string;
   href: string;
-  lang?: Languages;
+  lang?: string;
 }
 
 interface IProps {

@@ -38,8 +38,8 @@ jobs:
           at: workspace
       - aws-cli/install
       - aws-cli/configure:
-          aws-access-key-id: "$AWS_ACCESS_KEY_ID"
-          aws-region: "$AWS_DEFAULT_REGION"
+          aws-access-key-id: '$AWS_ACCESS_KEY_ID'
+          aws-region: '$AWS_DEFAULT_REGION'
       - run:
           name: Load image
           command: |
@@ -63,4 +63,3 @@ workflows:
           filters:
             branches:
               only: master
-
