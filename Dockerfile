@@ -1,4 +1,4 @@
-FROM node:11-alpine as build
+FROM node:12-alpine as build
 
 RUN apk update && apk upgrade && apk add git
 
@@ -19,7 +19,7 @@ RUN npm test
 RUN npm run build
 
 
-FROM nginx:1.15-alpine as release
+FROM nginx:1.17-alpine as release
 
 WORKDIR /app
 
