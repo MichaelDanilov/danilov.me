@@ -9,7 +9,8 @@
       {
         "extensions": [".tsx"]
       }
-    ]
+    ],
+    "no-unused-vars": "warn"
   },
   "settings": {
     "import/resolver": {

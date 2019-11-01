@@ -7,7 +7,7 @@ import data from '../../data/index';
 
 import { RUSSIAN as LANG } from '../../constants/languages';
 
-const IndexRuPage: React.SFC = () => (
+const IndexRuPage = () => (
   <PageWrapper meta={{ title: data.meta.title[LANG] }} lang={LANG} url="/">
     <Main lang={LANG} />
   </PageWrapper>

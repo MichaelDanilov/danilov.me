@@ -29,4 +29,4 @@ export default {
       lang: 'en-US',
     },
   ],
-} as any;
+};

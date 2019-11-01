@@ -12,7 +12,7 @@ const Layout = ({ children }: IProps) => (
 );
 
 interface IProps {
-  children: any;
+  children: React.ReactNode;
 }
 
 export default Layout;

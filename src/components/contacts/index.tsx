@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import data from '../../data/contacts';
 
-import { ENGLISH } from '../../constants/languages';
+import Languages from '../../constants/languages';
 
 const StyledContacts = styled.div`
   margin: 0;
@@ -38,14 +38,14 @@ const renderListItem = (item: IItemProps, index: number) => (
   </StyledItem>
 );
 
-const Contacts = ({ lang = ENGLISH }: IProps) => (
+const Contacts = ({ lang = Languages.english }: IProps) => (
   <StyledContacts>
     <StyledList>{data.content[lang].list.map(renderListItem)}</StyledList>
   </StyledContacts>
 );
 
 interface IProps {
-  lang: string;
+  lang: Languages;
 }
 
 interface IItemProps {

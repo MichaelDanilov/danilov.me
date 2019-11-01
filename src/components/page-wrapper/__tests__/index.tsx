@@ -2,11 +2,13 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import PageWrapper from '..';
 
+import Languages from '../../../constants/languages';
+
 describe('PageWrapper', () => {
   it('english version renders correctly', () => {
     const tree = renderer
       .create(
-        <PageWrapper lang="en" meta={{}}>
+        <PageWrapper lang={Languages.english} meta={{}}>
           <span>Lorem ipsum</span>
         </PageWrapper>
       )
@@ -17,7 +19,7 @@ describe('PageWrapper', () => {
   it('russian version renders correctly', () => {
     const tree = renderer
       .create(
-        <PageWrapper lang="ru" meta={{}}>
+        <PageWrapper lang={Languages.russian} meta={{}}>
           <span>Lorem ipsum</span>
         </PageWrapper>
       )

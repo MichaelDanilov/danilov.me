@@ -14,4 +14,4 @@ export default {
     en: 'сайт, michael danilov, monk albino, михаил данилов',
     ru: 'сайт, michael danilov, monk albino, михаил данилов',
   },
-} as any;
+};

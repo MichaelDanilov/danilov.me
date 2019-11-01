@@ -3,23 +3,23 @@ import Helmet from 'react-helmet';
 
 import Header from '../header';
 import Layout from '../layout';
-import Navigation from '../navigation';
+import Navigation, { INavigation } from '../navigation';
 import Page from '../page';
 
 import defaultMeta from '../../data/meta';
 import navigation from '../../data/navigation';
 
-import { ENGLISH } from '../../constants/languages';
+import Languages from '../../constants/languages';
 
 // eslint-disable-next-line object-curly-newline
 const PageWrapper = ({
   children,
   headerAbout = '',
   meta = {},
-  lang = ENGLISH,
+  lang = Languages.english,
   url = '',
 }: IProps) => {
-  const nav = navigation[lang];
+  const nav: INavigation[] = navigation[lang];
   const resultMeta = {
     ...{
       description: defaultMeta.description[lang],
@@ -89,9 +89,9 @@ interface IMeta {
 }
 
 interface IProps {
-  lang: string;
+  lang: Languages;
   meta: IMeta;
-  children: any;
+  children: React.ReactNode;
   headerAbout?: string;
   url?: string;
 }

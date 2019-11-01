@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import header from '../../data/header';
 
-import { ENGLISH } from '../../constants/languages';
+import Languages from '../../constants/languages';
 
 const StyledTitle = styled.h1`
   font-size: 3rem;
@@ -16,7 +16,7 @@ const StyledAbout = styled.p`
   padding: 0;
 `;
 
-const Header = ({ about = '', lang = ENGLISH }: IProps) => (
+const Header = ({ about = '', lang = Languages.english }: IProps) => (
   <>
     <StyledTitle>{header.name[lang]}</StyledTitle>
     {about ? <StyledAbout dangerouslySetInnerHTML={{ __html: about }} /> : null}
@@ -25,7 +25,7 @@ const Header = ({ about = '', lang = ENGLISH }: IProps) => (
 
 interface IProps {
   about?: string;
-  lang: string;
+  lang: Languages;
 }
 
 export default Header;

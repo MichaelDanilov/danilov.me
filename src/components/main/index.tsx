@@ -3,14 +3,14 @@ import React from 'react';
 import Paragraph from '../paragraph';
 import data from '../../data/index';
 
-import { ENGLISH } from '../../constants/languages';
+import Languages from '../../constants/languages';
 
-const Main = ({ lang = ENGLISH }: IProps) => (
+const Main = ({ lang = Languages.english }: IProps) => (
   <Paragraph paragraphs={data.content[lang]} />
 );
 
 interface IProps {
-  lang: string;
+  lang: Languages;
 }
 
 export default Main;

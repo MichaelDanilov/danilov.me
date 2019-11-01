@@ -7,7 +7,7 @@ import data from '../../data/error';
 
 import { RUSSIAN as LANG } from '../../constants/languages';
 
-const ErrorRuPage: React.SFC = () => (
+const ErrorRuPage = () => (
   <PageWrapper meta={{ title: data.meta.title[LANG] }} lang={LANG}>
     <Error lang={LANG} />
   </PageWrapper>

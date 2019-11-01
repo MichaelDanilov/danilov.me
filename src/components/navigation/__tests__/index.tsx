@@ -2,6 +2,8 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import Navigation from '..';
 
+import Languages from '../../../constants/languages';
+
 describe('Navigation', () => {
   it('renders correctly', () => {
     const tree = renderer.create(<Navigation />).toJSON();
@@ -16,7 +18,7 @@ describe('Navigation', () => {
             {
               title: 'Example.com',
               href: 'https://example.com',
-              lang: 'en',
+              lang: Languages.english,
             },
             {
               title: 'Example.net',

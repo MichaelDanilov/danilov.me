@@ -9,4 +9,4 @@ export default {
     en: ['Looks like, something has gone wrong'],
     ru: ['Кажется что-то пошло не так'],
   },
-} as any;
+};

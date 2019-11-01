@@ -5,4 +5,4 @@ export default {
     en: michaeldanilov.name,
     ru: michaeldanilov.ru.name,
   },
-} as any;
+};

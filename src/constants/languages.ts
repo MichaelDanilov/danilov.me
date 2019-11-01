@@ -1,4 +1,9 @@
-const ENGLISH: string = 'en';
-const RUSSIAN: string = 'ru';
+enum Languages {
+  english = 'en',
+  russian = 'ru',
+}
 
-export { ENGLISH, RUSSIAN };
+export const ENGLISH = Languages.english;
+export const RUSSIAN = Languages.russian;
+
+export default Languages;

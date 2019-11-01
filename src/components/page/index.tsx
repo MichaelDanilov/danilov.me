@@ -10,7 +10,7 @@ const StyledPage = styled.div`
 const Page = ({ children }: IProps) => <StyledPage>{children}</StyledPage>;
 
 interface IProps {
-  children?: any;
+  children?: React.ReactNode;
 }
 
 export default Page;

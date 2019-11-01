@@ -7,7 +7,7 @@ import data from '../data/contacts';
 
 import { ENGLISH as LANG } from '../constants/languages';
 
-const ContactsPage: React.SFC = () => (
+const ContactsPage = () => (
   <PageWrapper
     meta={{ title: data.meta.title[LANG] }}
     lang={LANG}
