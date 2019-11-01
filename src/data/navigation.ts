@@ -5,6 +5,10 @@ export default {
       href: '/',
     },
     {
+      title: 'CV',
+      href: '/cv',
+    },
+    {
       title: 'Contacts',
       href: '/contacts',
     },
@@ -18,6 +22,10 @@ export default {
     {
       title: 'Главная',
       href: '/ru',
+    },
+    {
+      title: 'Резюме',
+      href: '/ru/cv',
     },
     {
       title: 'Контакты',

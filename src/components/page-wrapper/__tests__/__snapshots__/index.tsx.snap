@@ -31,6 +31,17 @@ Array [
         className="sc-bxivhb jwZqTZ"
       >
         <a
+          href="/cv"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          CV
+        </a>
+      </li>
+      <li
+        className="sc-bxivhb jwZqTZ"
+      >
+        <a
           href="/contacts"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -88,6 +99,17 @@ Array [
           onMouseEnter={[Function]}
         >
           Главная
+        </a>
+      </li>
+      <li
+        className="sc-bxivhb jwZqTZ"
+      >
+        <a
+          href="/ru/cv"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Резюме
         </a>
       </li>
       <li
