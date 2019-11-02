@@ -17,13 +17,21 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     background-color: ${styles.backgroundColor};
     font-size: ${styles.fontSize};
+
+    @media (prefers-color-scheme: dark) {
+      background-color: ${styles.backgroundColorDark};
     }
+  }
 
   body {
     color: ${styles.color};
     font-size: 1rem;
     font-family: ${styles.fontFamily};
     line-height: ${styles.lineHeight};
+
+    @media (prefers-color-scheme: dark) {
+      color: ${styles.colorDark};
+    }
   }
 
   html,
@@ -39,8 +47,16 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     transition: color 200ms ease-out;
 
+    @media (prefers-color-scheme: dark) {
+      color: ${styles.linkColorDark};
+    }
+
     &:hover {
       color: ${styles.linkHoverColor};
+
+      @media (prefers-color-scheme: dark) {
+        color: ${styles.linkHoverColorDark};
+      }
     }
   }
 `;
