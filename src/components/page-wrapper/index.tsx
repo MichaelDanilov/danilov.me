@@ -67,6 +67,33 @@ const PageWrapper = ({
           />
         ))}
         <link type="text/plain" rel="author" href="/humans.txt" />
+        <meta property="og:title" content="Michael Danilov" />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="https://danilov.me/" />
+        <meta property="og:profile:first_name" content="Michael" />
+        <meta property="og:profile:last_name" content="Danilov" />
+        <meta property="og:profile:username" content="michaeldanilov" />
+        <meta property="og:profile:gender" content="male" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@MonkAlbino" />
+        <script type="application/ld+json">
+          {`
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Michael Danilov",
+  "disambiguatingDescription": "JAM-stask developer",
+  "email": "mailto:michael@danilov.me",
+  "gender": "Male",
+  "jobTitle": "Front-end developer",
+  "knowsLanguage": "Russian, English",
+  "worksFor":  {
+    "@type": "Organization",
+    "name": "Yandex",
+    "url": "https://yandex.com"
+  }
+}`}
+        </script>
       </Helmet>
       <Page>
         <Header about={headerAbout} lang={lang} />
