@@ -67,6 +67,24 @@ const PageWrapper = ({
           />
         ))}
         <link type="text/plain" rel="author" href="/humans.txt" />
+        <script type="application/ld+json">
+          {`
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Michael Danilov",
+  "disambiguatingDescription": "JAM-stask developer",
+  "email": "mailto:michael@danilov.me",
+  "gender": "Male",
+  "jobTitle": "Front-end developer",
+  "knowsLanguage": "Russian, English",
+  "worksFor":  {
+    "@type": "Organization",
+    "name": "Yandex",
+    "url": "https://yandex.com"
+  }
+}`}
+        </script>
       </Helmet>
       <Page>
         <Header about={headerAbout} lang={lang} />
