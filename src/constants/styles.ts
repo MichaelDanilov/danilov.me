@@ -1,5 +1,5 @@
 export default {
-  backgroundColor: 'hsl(0, 0%, 87%)',
+  backgroundColor: 'hsl(0, 0%, 100%)',
   backgroundColorDark: 'hsl(0, 0%, 15%)',
   color: 'hsl(0, 0%, 4%)',
   colorDark: 'hsl(0, 0%, 90%)',
