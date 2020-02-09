@@ -1,19 +1,38 @@
-/* English version */
+## Team
+- Michael Danilov
+  - Developer
+  - Omsk^W, Moscow, Russia
+  - michael@danilov.me
+  - Twitter @MonkAlbino
 
-  /* TEAM */
-  Host, developer: Michael Danilov.
-  Site: https://danilov.me/
-  Email: michael@danilov.me
-  Twitter: @MonkAlbino
-  Location: Omsk, Russia.
-  Languages: Russian, English.
+## Site
+- Standards
+  - HTML (https://www.w3.org/TR/html5/)
+  - CSS (https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/)
+  - JavaScript (http://www.ecma-international.org/publications/standards/Ecma-262.htm)
 
-/* Русская версия */
+- Components
+  - GatsbyJS (https://www.gatsbyjs.org/)
+  - React (https://reactjs.org/)
+  - styled-components (https://styled-components.com/)
+  - Yandex Metrika (https://metrika.yandex.com/)
 
-  /* Команда */
-  Автор: Михаил Данилов.
-  Сайт: https://danilov.me/
-  Электронная почта: michael@danilov.me
-  Twitter: @MonkAlbino
-  Место жительства: Омск, Россия.
-  Языки: русский, английский.
+- Browsers
+  - Yandex Browser (https://browser.yandex.com/)
+  - Google Chrome (https://www.google.com/chrome/)
+  - Firefox (https://www.mozilla.org/en-US/firefox/new/)
+  - Safari (http://www.apple.com/safari/)
+  - Microsoft Edge (https://www.microsoft.com/en-us/windows/microsoft-edge)
+
+- Software and Services
+  - Node.js (https://nodejs.org/)
+  - TypeScript (https://www.typescriptlang.org/)
+  - Git (https://git-scm.com/)
+  - GitHub (https://github.com/)
+  - CircleCI (https://circleci.com/)
+  - Amazon Web Services (https://aws.amazon.com/)
+  - DigitalOcean (https://www.digitalocean.com/)
+  - macOS (https://www.apple.com/macos/mojave/)
+  - Visual Studio Code (https://code.visualstudio.com)
+  - Sublime Merge (https://www.sublimemerge.com/)
+  - Yandex Music (https://music.yandex.com/)
