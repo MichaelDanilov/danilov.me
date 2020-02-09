@@ -23,3 +23,9 @@ npm start
 ```bash
 npm run build
 ```
+
+### start local docker image
+
+```bash
+docker build -t danilov.me . && docker run -p 8080:80 danilov.me:latest
+```
