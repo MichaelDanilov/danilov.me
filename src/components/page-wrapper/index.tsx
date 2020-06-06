@@ -1,9 +1,9 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 import Header from '../header';
 import Layout from '../layout';
-import Navigation, { INavigation } from '../navigation';
+import Navigation from '../navigation';
 import Page from '../page';
 
 import defaultMeta from '../../data/meta';
@@ -41,7 +41,7 @@ const PageWrapper = ({
   const alternateLink: Link[] = [];
 
   if (url) {
-    ['en-US', 'ru-RU'].forEach(fullLangCode => {
+    ['en-US', 'ru-RU'].forEach((fullLangCode) => {
       const langCode = fullLangCode.split('-')[0];
       alternateLink.push({
         hreflang: fullLangCode,
@@ -55,7 +55,7 @@ const PageWrapper = ({
       <Helmet>
         <html lang={lang} />
         <title>{resultMeta.title}</title>
-        {helmetMeta.map(hMeta => (
+        {helmetMeta.map((hMeta) => (
           <meta key={hMeta.name} name={hMeta.name} content={hMeta.content} />
         ))}
         {alternateLink.map((aLink: Link) => (

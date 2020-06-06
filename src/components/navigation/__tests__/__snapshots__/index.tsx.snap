@@ -2,36 +2,39 @@
 
 exports[`Navigation renders correctly 1`] = `
 <ul
-  className="sc-bdVaJa hTzUzq"
+  className="sc-AxjAm fODQmB"
 />
 `;
 
 exports[`Navigation with some navigation 1`] = `
 <ul
-  className="sc-bdVaJa hTzUzq"
+  className="sc-AxjAm fODQmB"
 >
   <li
-    className="sc-bwzfXH dmRCrB"
+    className="sc-AxirZ hcDpjO"
   >
     <a
-      href="/https:/example.com"
+      href="/en"
       hrefLang="en"
       lang="en"
       onClick={[Function]}
       onMouseEnter={[Function]}
     >
-      Example.com
+      English version
     </a>
   </li>
   <li
-    className="sc-bwzfXH dmRCrB"
+    className="sc-AxirZ hcDpjO"
   >
     <a
-      href="/https:/example.net"
+      aria-current="page"
+      className=""
+      href="/"
       onClick={[Function]}
       onMouseEnter={[Function]}
+      style={Object {}}
     >
-      Example.net
+      Basic version
     </a>
   </li>
 </ul>

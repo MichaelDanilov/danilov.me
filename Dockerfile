@@ -1,23 +1,23 @@
 FROM node:12-alpine as build
 
-RUN apk update && apk upgrade && apk add git
-
 WORKDIR /app
 
 COPY gatsby-config.js .
 COPY jest ./jest
 COPY jest.config.js .
-COPY package*.json ./
+COPY package.json ./
+COPY package-lock.json ./
 COPY src ./src
 COPY static ./static
 COPY tsconfig.json .
 
 RUN npm install
+RUN npm run postinstall
 RUN npm test
 RUN npm run build
 
 
-FROM nginx:1.17-alpine as release
+FROM nginx:alpine as release
 
 WORKDIR /app
 

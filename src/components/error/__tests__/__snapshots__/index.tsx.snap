@@ -2,10 +2,10 @@
 
 exports[`Error english version renders correctly 1`] = `
 <div
-  className="sc-bdVaJa haSphr"
+  className="sc-AxjAm hKhHEk"
 >
   <p
-    className="sc-bwzfXH jfgEZP"
+    className="sc-AxirZ euxtxW"
     dangerouslySetInnerHTML={
       Object {
         "__html": "Looks like, something has gone wrong",
@@ -17,10 +17,10 @@ exports[`Error english version renders correctly 1`] = `
 
 exports[`Error russian version renders correctly 1`] = `
 <div
-  className="sc-bdVaJa haSphr"
+  className="sc-AxjAm hKhHEk"
 >
   <p
-    className="sc-bwzfXH jfgEZP"
+    className="sc-AxirZ euxtxW"
     dangerouslySetInnerHTML={
       Object {
         "__html": "Кажется что-то пошло не так",

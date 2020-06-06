@@ -3,12 +3,12 @@
 exports[`Header add custom about 1`] = `
 Array [
   <h1
-    className="sc-bdVaJa gyVQum"
+    className="sc-AxjAm hWUaCP"
   >
     Michael Danilov
   </h1>,
   <p
-    className="sc-bwzfXH jfgEZP"
+    className="sc-AxirZ euxtxW"
     dangerouslySetInnerHTML={
       Object {
         "__html": "Lorem ipsum",
@@ -20,7 +20,7 @@ Array [
 
 exports[`Header english version renders correctly 1`] = `
 <h1
-  className="sc-bdVaJa gyVQum"
+  className="sc-AxjAm hWUaCP"
 >
   Michael Danilov
 </h1>
@@ -28,7 +28,7 @@ exports[`Header english version renders correctly 1`] = `
 
 exports[`Header russian version renders correctly 1`] = `
 <h1
-  className="sc-bdVaJa gyVQum"
+  className="sc-AxjAm hWUaCP"
 >
   Михаил Данилов
 </h1>
