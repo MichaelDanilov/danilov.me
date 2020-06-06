@@ -1,4 +1,4 @@
-const michaeldanilov = require('michaeldanilov');
+const { default: michaeldanilov } = require('michaeldanilov');
 
 const package = require('./package.json');
 
@@ -50,7 +50,7 @@ module.exports = {
       resolve: 'gatsby-plugin-sitemap',
       options: {
         serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map(edge => {
+          allSitePage.edges.map((edge) => {
             return {
               url: site.siteMetadata.siteUrl + edge.node.path,
               changefreq: 'weekly',

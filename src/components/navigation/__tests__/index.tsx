@@ -16,13 +16,13 @@ describe('Navigation', () => {
         <Navigation
           navigation={[
             {
-              title: 'Example.com',
-              href: 'https://example.com',
+              title: 'English version',
+              href: '/en',
               lang: Languages.english,
             },
             {
-              title: 'Example.net',
-              href: 'https://example.net',
+              title: 'Basic version',
+              href: '/',
             },
           ]}
         />
