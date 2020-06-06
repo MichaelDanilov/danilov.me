@@ -13,9 +13,10 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "clean": "rm -rf ./node_modules ./public",
+    "clean": "rm -rf ./node_modules ./public ./.cache",
     "lint:js": "eslint \"src/**/*.{js,ts,tsx}\"",
     "lint": "run-p lint:* spellcheck",
+    "postinstall": "rm -rf node_modules/gatsby/node_modules/graphql && ln -s node_modules/graphql node_modules/gatsby/node_modules/graphql",
     "spellcheck": "yaspeller *.md",
     "start:dev": "NODE_PATH=./ gatsby develop",
     "start": "npm run start:dev",
@@ -28,27 +29,27 @@
   },
   "license": "MIT",
   "dependencies": {
-    "acorn": "7.1.1",
-    "gatsby": "2.17.7",
-    "gatsby-plugin-favicon": "3.1.6",
-    "gatsby-plugin-offline": "3.0.17",
-    "gatsby-plugin-react-helmet": "3.1.13",
-    "gatsby-plugin-sitemap": "2.2.19",
-    "gatsby-plugin-styled-components": "3.1.11",
-    "gatsby-plugin-typescript": "2.1.15",
+    "acorn": "6.4.1",
+    "gatsby": "2.23.1",
+    "gatsby-plugin-manifest": "2.4.10",
+    "gatsby-plugin-offline": "3.2.8",
+    "gatsby-plugin-react-helmet": "3.3.3",
+    "gatsby-plugin-sitemap": "2.4.4",
+    "gatsby-plugin-styled-components": "3.3.3",
+    "gatsby-plugin-typescript": "2.4.4",
     "graphql": "14.5.8",
     "michaeldanilov": "1.1.1",
-    "react": "16.11.0",
-    "react-dom": "16.11.0",
-    "react-helmet": "5.2.1",
-    "styled-components": "4.4.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-helmet": "6.0.0",
+    "styled-components": "5.1.1",
     "typescript": "3.9.5"
   },
   "devDependencies": {
     "@types/jest": "25.2.3",
-    "@types/react-helmet": "5.0.14",
-    "@types/react-test-renderer": "16.9.1",
-    "@types/styled-components": "4.1.20",
+    "@types/react-helmet": "6.0.0",
+    "@types/react-test-renderer": "16.9.2",
+    "@types/styled-components": "5.1.0",
     "@typescript-eslint/parser": "2.34.0",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.1.0",
@@ -66,16 +67,16 @@
     "lint-staged": "10.2.9",
     "npm-run-all": "4.1.5",
     "prettier": "2.0.5",
-    "react-test-renderer": "16.11.0",
+    "react-test-renderer": "16.13.1",
     "request": "2.88.2",
     "ts-jest": "26.1.0",
     "yaspeller": "7.0.0"
   },
   "overrides": {
-    "graphql": "14.1.1"
+    "graphql": "14.6.0"
   },
   "resolutions": {
-    "graphql": "14.1.1"
+    "graphql": "14.6.0"
   },
   "husky": {
     "hooks": {

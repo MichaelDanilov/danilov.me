@@ -1,6 +1,6 @@
 const { default: michaeldanilov } = require('michaeldanilov');
 
-const package = require('./package.json');
+const pkg = require('./package.json');
 
 module.exports = {
   siteMetadata: {
@@ -11,33 +11,17 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-typescript',
     {
-      resolve: 'gatsby-plugin-favicon',
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        logo: './src/static/avataaars.png',
-        appName: package.name,
-        appDescription: package.description,
-        developerName: package.author.name,
-        developerURL: package.author.url,
-        dir: 'auto',
+        name: pkg.name,
+        short_name: pkg.name,
+        description: pkg.description,
         lang: 'en-US',
-        background: '#fff',
-        theme_color: '#3273dc',
         display: 'standalone',
-        orientation: 'any',
+        icon: './src/static/avataaars.png',
         start_url: '/',
-        version: package.version,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          opengraph: true,
-          twitter: true,
-          yandex: true,
-          windows: false,
-        },
+        background_color: '#fff',
+        theme_color: '#3273dc',
       },
     },
     {

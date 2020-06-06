@@ -3,18 +3,18 @@
 exports[`PageWrapper english version renders correctly 1`] = `
 Array [
   <div
-    className="sc-ifAKCX kjRRvg"
+    className="sc-AxhUy iNFuyY"
   >
     <h1
-      className="sc-bdVaJa gyVQum"
+      className="sc-AxjAm hWUaCP"
     >
       Michael Danilov
     </h1>
     <ul
-      className="sc-htpNat datbWf"
+      className="sc-AxiKw hdlPUq"
     >
       <li
-        className="sc-bxivhb jwZqTZ"
+        className="sc-AxhCb fCdlja"
       >
         <a
           aria-current="page"
@@ -28,7 +28,7 @@ Array [
         </a>
       </li>
       <li
-        className="sc-bxivhb jwZqTZ"
+        className="sc-AxhCb fCdlja"
       >
         <a
           href="/cv"
@@ -39,7 +39,7 @@ Array [
         </a>
       </li>
       <li
-        className="sc-bxivhb jwZqTZ"
+        className="sc-AxhCb fCdlja"
       >
         <a
           href="/contacts"
@@ -50,7 +50,7 @@ Array [
         </a>
       </li>
       <li
-        className="sc-bxivhb jwZqTZ"
+        className="sc-AxhCb fCdlja"
       >
         <a
           href="/ru"
@@ -80,18 +80,18 @@ Array [
 exports[`PageWrapper russian version renders correctly 1`] = `
 Array [
   <div
-    className="sc-ifAKCX kjRRvg"
+    className="sc-AxhUy iNFuyY"
   >
     <h1
-      className="sc-bdVaJa gyVQum"
+      className="sc-AxjAm hWUaCP"
     >
       Михаил Данилов
     </h1>
     <ul
-      className="sc-htpNat datbWf"
+      className="sc-AxiKw hdlPUq"
     >
       <li
-        className="sc-bxivhb jwZqTZ"
+        className="sc-AxhCb fCdlja"
       >
         <a
           href="/ru"
@@ -102,7 +102,7 @@ Array [
         </a>
       </li>
       <li
-        className="sc-bxivhb jwZqTZ"
+        className="sc-AxhCb fCdlja"
       >
         <a
           href="/ru/cv"
@@ -113,7 +113,7 @@ Array [
         </a>
       </li>
       <li
-        className="sc-bxivhb jwZqTZ"
+        className="sc-AxhCb fCdlja"
       >
         <a
           href="/ru/contacts"
@@ -124,7 +124,7 @@ Array [
         </a>
       </li>
       <li
-        className="sc-bxivhb jwZqTZ"
+        className="sc-AxhCb fCdlja"
       >
         <a
           aria-current="page"

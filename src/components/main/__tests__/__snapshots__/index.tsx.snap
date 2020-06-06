@@ -2,10 +2,10 @@
 
 exports[`Main english version renders correctly 1`] = `
 <div
-  className="sc-bdVaJa haSphr"
+  className="sc-AxjAm hKhHEk"
 >
   <p
-    className="sc-bwzfXH jfgEZP"
+    className="sc-AxirZ euxtxW"
     dangerouslySetInnerHTML={
       Object {
         "__html": "<a href=\\"https://jamstack.org/\\" hreflang=\\"en-US\\">JAM-stack</a> developer.<br>Used to work in <a href=\\"https://ningen.group/\\" hreflang=\\"en-US\\">Ningen Group</a> and <a href=\\"https://livetyping.com/en/\\" hreflang=\\"en-US\\">Live Typing</a>.<br>Now working in <a href=\\"https://yandex.com/\\" hreflang=\\"en-US\\">Yandex</a> in <a href=\\"https://www.kinopoisk.ru/\\" hreflang=\\"en-US\\">KinoPoisk</a> Frontend Development group.<br>Used to live in <a href=\\"https://en.wikipedia.org/wiki/Omsk\\" hreflang=\\"en-US\\">Omsk, Russia</a>. Now living in <a href=\\"https://en.wikipedia.org/wiki/Moscow\\" hreflang=\\"ru-RU\\">Moscow, Russia</a>",
@@ -17,10 +17,10 @@ exports[`Main english version renders correctly 1`] = `
 
 exports[`Main russian version renders correctly 1`] = `
 <div
-  className="sc-bdVaJa haSphr"
+  className="sc-AxjAm hKhHEk"
 >
   <p
-    className="sc-bwzfXH jfgEZP"
+    className="sc-AxirZ euxtxW"
     dangerouslySetInnerHTML={
       Object {
         "__html": "<a href=\\"https://jamstack.org/\\" hreflang=\\"en-US\\">JAM-stack</a> разработчик.<br>Работал в <a href=\\"https://ningen.group/\\" hreflang=\\"en-US\\">Ningen Group</a> и <a href=\\"https://livetyping.com/ru/\\" hreflang=\\"ru-RU\\">Лайв Тайпинге</a>.<br>Сейчас работаю в компании <a href=\\"https://yandex.ru/\\" hreflang=\\"ru-RU\\">Яндекс</a> в команде фронтенд-разработки <a href=\\"https://www.kinopoisk.ru/\\" hreflang=\\"ru-RU\\">КиноПоиска</a>.<br>Жил в <a href=\\"https://ru.wikipedia.org/wiki/Омск\\" hreflang=\\"ru-RU\\">Омске</a>. Сейчас в <a href=\\"https://ru.wikipedia.org/wiki/Москва\\" hreflang=\\"ru-RU\\">Москве</a>.",
