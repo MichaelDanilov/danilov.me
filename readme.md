@@ -8,20 +8,20 @@ Source of personal website of [Michael Danilov](https://danilov.me).
 
 ```bash
 nvm use && \
-npm run clean && \
-npm i
+yarn clean && \
+yarn
 ```
 
 ### start local server (after installing dependencies)
 
 ```bash
-npm start
+yarn start
 ```
 
 ### build to static (after installing dependencies)
 
 ```bash
-npm run build
+yarn build
 ```
 
 ### start local docker image
