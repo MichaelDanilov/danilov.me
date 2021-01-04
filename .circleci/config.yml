@@ -4,10 +4,11 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:14
     steps:
       - checkout
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 19.03.13
       - run:
           name: Setup common environment variables
           command: |
@@ -33,7 +34,8 @@ jobs:
       AWS_DEFAULT_OUTPUT: json
     steps:
       - checkout
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 19.03.13
       - attach_workspace:
           at: workspace
       - aws-cli/install
