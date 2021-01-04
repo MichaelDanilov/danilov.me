@@ -16,7 +16,6 @@
     "clean": "rm -rf ./node_modules ./public ./.cache",
     "lint:js": "eslint \"src/**/*.{js,ts,tsx}\"",
     "lint": "run-p lint:* spellcheck",
-    "postinstall": "rm -rf node_modules/gatsby/node_modules/graphql && ln -s node_modules/graphql node_modules/gatsby/node_modules/graphql",
     "spellcheck": "yaspeller *.md",
     "start:dev": "NODE_PATH=./ gatsby develop",
     "start": "npm run start:dev",
@@ -37,7 +36,6 @@
     "gatsby-plugin-sitemap": "2.4.4",
     "gatsby-plugin-styled-components": "3.3.3",
     "gatsby-plugin-typescript": "2.4.4",
-    "graphql": "14.5.8",
     "michaeldanilov": "1.1.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -71,12 +69,6 @@
     "request": "2.88.2",
     "ts-jest": "26.1.0",
     "yaspeller": "7.0.0"
-  },
-  "overrides": {
-    "graphql": "14.6.0"
-  },
-  "resolutions": {
-    "graphql": "14.6.0"
   },
   "husky": {
     "hooks": {
