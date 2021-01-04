@@ -81,7 +81,7 @@ const PageWrapper: React.FC<IProps> = ({
   "@context": "http://schema.org",
   "@type": "Person",
   "name": "Michael Danilov",
-  "disambiguatingDescription": "JAM-stask developer",
+  "disambiguatingDescription": "Jamstack developer",
   "email": "mailto:michael@danilov.me",
   "gender": "Male",
   "jobTitle": "Front-end developer",
