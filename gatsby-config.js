@@ -27,20 +27,20 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-offline',
       options: {
-        cacheId: 'danilov.me',
+        workboxConfig: {
+          cacheId: 'danilov.me',
+        },
       },
     },
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
         serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map((edge) => {
-            return {
-              url: site.siteMetadata.siteUrl + edge.node.path,
-              changefreq: 'weekly',
-              priority: 0.7,
-            };
-          }),
+          allSitePage.edges.map((edge) => ({
+            url: site.siteMetadata.siteUrl + edge.node.path,
+            changefreq: 'weekly',
+            priority: 0.7,
+          })),
       },
     },
   ],

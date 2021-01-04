@@ -2,16 +2,16 @@
 
 exports[`Navigation renders correctly 1`] = `
 <ul
-  className="sc-AxjAm fODQmB"
+  className="sc-bdfBwQ WZJbc"
 />
 `;
 
 exports[`Navigation with some navigation 1`] = `
 <ul
-  className="sc-AxjAm fODQmB"
+  className="sc-bdfBwQ WZJbc"
 >
   <li
-    className="sc-AxirZ hcDpjO"
+    className="sc-gsTCUz bTgYLQ"
   >
     <a
       href="/en"
@@ -24,7 +24,7 @@ exports[`Navigation with some navigation 1`] = `
     </a>
   </li>
   <li
-    className="sc-AxirZ hcDpjO"
+    className="sc-gsTCUz bTgYLQ"
   >
     <a
       aria-current="page"

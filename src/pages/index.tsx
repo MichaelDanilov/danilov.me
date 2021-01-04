@@ -7,7 +7,7 @@ import data from '../data/index';
 
 import { ENGLISH as LANG } from '../constants/languages';
 
-const IndexPage = () => (
+const IndexPage: React.FC = () => (
   <PageWrapper meta={{ title: data.meta.title[LANG] }} lang={LANG} url="/">
     <Main lang={LANG} />
   </PageWrapper>

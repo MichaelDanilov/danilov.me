@@ -1,7 +1,7 @@
 {
   "parser": "@typescript-eslint/parser",
   "extends": ["airbnb", "prettier"],
-  "plugins": ["prettier", "import"],
+  "plugins": ["prettier", "import", "@typescript-eslint"],
   "rules": {
     "prettier/prettier": "error",
     "import/extensions": [
@@ -21,7 +21,12 @@
         "extensions": [".tsx"]
       }
     ],
-    "no-unused-vars": "warn"
+    "no-unused-vars": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": [
+      "error"
+    ],
+    "react/prop-types": "off",
   },
   "settings": {
     "import/resolver": {

@@ -7,7 +7,7 @@ import data from '../data/error';
 
 import { ENGLISH as LANG } from '../constants/languages';
 
-const ErrorPage = () => (
+const ErrorPage: React.FC = () => (
   <PageWrapper meta={{ title: data.meta.title[LANG] }} lang={LANG}>
     <Error lang={LANG} />
   </PageWrapper>

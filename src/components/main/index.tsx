@@ -5,7 +5,7 @@ import data from '../../data/index';
 
 import Languages from '../../constants/languages';
 
-const Main = ({ lang = Languages.english }: IProps) => (
+const Main: React.FC<IProps> = ({ lang = Languages.english }) => (
   <Paragraph paragraphs={data.content[lang]} />
 );
 

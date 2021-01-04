@@ -16,7 +16,7 @@ const StyledAbout = styled.p`
   padding: 0;
 `;
 
-const Header = ({ about = '', lang = Languages.english }: IProps) => (
+const Header: React.FC<IProps> = ({ about = '', lang = Languages.english }) => (
   <>
     <StyledTitle>{header.name[lang]}</StyledTitle>
     {about ? <StyledAbout dangerouslySetInnerHTML={{ __html: about }} /> : null}

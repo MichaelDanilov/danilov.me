@@ -2,13 +2,13 @@
 
 exports[`Contacts english version renders correctly 1`] = `
 <div
-  className="sc-AxjAm hKhHEk"
+  className="sc-bdfBwQ gSQAtd"
 >
   <ul
-    className="sc-AxirZ gXlCIn"
+    className="sc-gsTCUz ieuZAF"
   >
     <li
-      className="sc-AxiKw xmlnn"
+      className="sc-dlfnbm haUCCe"
     >
       <span>
         Email
@@ -21,7 +21,7 @@ exports[`Contacts english version renders correctly 1`] = `
       </a>
     </li>
     <li
-      className="sc-AxiKw xmlnn"
+      className="sc-dlfnbm haUCCe"
     >
       <span>
         Telegram
@@ -34,7 +34,7 @@ exports[`Contacts english version renders correctly 1`] = `
       </a>
     </li>
     <li
-      className="sc-AxiKw xmlnn"
+      className="sc-dlfnbm haUCCe"
     >
       <span>
         Twitter
@@ -47,7 +47,7 @@ exports[`Contacts english version renders correctly 1`] = `
       </a>
     </li>
     <li
-      className="sc-AxiKw xmlnn"
+      className="sc-dlfnbm haUCCe"
     >
       <a
         href="https://fb.me/michaeldanilov"
@@ -61,13 +61,13 @@ exports[`Contacts english version renders correctly 1`] = `
 
 exports[`Contacts russian version renders correctly 1`] = `
 <div
-  className="sc-AxjAm hKhHEk"
+  className="sc-bdfBwQ gSQAtd"
 >
   <ul
-    className="sc-AxirZ gXlCIn"
+    className="sc-gsTCUz ieuZAF"
   >
     <li
-      className="sc-AxiKw xmlnn"
+      className="sc-dlfnbm haUCCe"
     >
       <span>
         Электронная почта
@@ -80,7 +80,7 @@ exports[`Contacts russian version renders correctly 1`] = `
       </a>
     </li>
     <li
-      className="sc-AxiKw xmlnn"
+      className="sc-dlfnbm haUCCe"
     >
       <a
         href="https://vk.me/michael.danilov"
@@ -89,7 +89,7 @@ exports[`Contacts russian version renders correctly 1`] = `
       </a>
     </li>
     <li
-      className="sc-AxiKw xmlnn"
+      className="sc-dlfnbm haUCCe"
     >
       <span>
         Twitter
@@ -102,7 +102,7 @@ exports[`Contacts russian version renders correctly 1`] = `
       </a>
     </li>
     <li
-      className="sc-AxiKw xmlnn"
+      className="sc-dlfnbm haUCCe"
     >
       <a
         href="https://fb.me/michaeldanilov"

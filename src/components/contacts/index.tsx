@@ -38,7 +38,7 @@ const renderListItem = (item: IItemProps, index: number) => (
   </StyledItem>
 );
 
-const Contacts = ({ lang = Languages.english }: IProps) => (
+const Contacts: React.FC<IProps> = ({ lang = Languages.english }) => (
   <StyledContacts>
     <StyledList>{data.content[lang].list.map(renderListItem)}</StyledList>
   </StyledContacts>

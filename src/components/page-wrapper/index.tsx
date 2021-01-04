@@ -11,14 +11,13 @@ import navigation from '../../data/navigation';
 
 import Languages from '../../constants/languages';
 
-// eslint-disable-next-line object-curly-newline
-const PageWrapper = ({
+const PageWrapper: React.FC<IProps> = ({
   children,
   headerAbout = '',
   meta = {},
   lang = Languages.english,
   url = '',
-}: IProps) => {
+}) => {
   const nav = navigation[lang];
   const resultMeta = {
     ...{

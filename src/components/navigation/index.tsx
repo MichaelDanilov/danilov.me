@@ -28,7 +28,7 @@ const renderNavigationItem = ({ href = '', title = '', lang }: INavigation) => (
   </StyledNavigationItem>
 );
 
-const Navigation = ({ navigation = [] }: IProps) => (
+const Navigation: React.FC<IProps> = ({ navigation = [] }) => (
   <StyledNavigationList>
     {navigation.map(renderNavigationItem)}
   </StyledNavigationList>
