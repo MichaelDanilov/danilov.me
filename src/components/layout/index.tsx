@@ -3,7 +3,7 @@ import React from 'react';
 import YaMetrika from '../yaMetrika';
 import GlobalStyle from './styles';
 
-const Layout = ({ children }: IProps) => (
+const Layout: React.FC<IProps> = ({ children }) => (
   <>
     <GlobalStyle />
     {children}

@@ -7,7 +7,7 @@ import data from '../../data/contacts';
 
 import { RUSSIAN as LANG } from '../../constants/languages';
 
-const ContactsRuPage = () => (
+const ContactsRuPage: React.FC = () => (
   <PageWrapper
     meta={{ title: data.meta.title[LANG] }}
     lang={LANG}

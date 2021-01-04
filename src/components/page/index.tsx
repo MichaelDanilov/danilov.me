@@ -7,7 +7,9 @@ const StyledPage = styled.div`
   max-width: 800px;
 `;
 
-const Page = ({ children }: IProps) => <StyledPage>{children}</StyledPage>;
+const Page: React.FC<IProps> = ({ children }) => (
+  <StyledPage>{children}</StyledPage>
+);
 
 interface IProps {
   children?: React.ReactNode;

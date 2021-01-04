@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-shadow
 enum Languages {
   english = 'en',
   russian = 'ru',
