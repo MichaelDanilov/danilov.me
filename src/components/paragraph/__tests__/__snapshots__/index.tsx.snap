@@ -2,10 +2,10 @@
 
 exports[`Paragraph renders correctly 1`] = `
 <div
-  className="sc-AxjAm hKhHEk"
+  className="sc-bdfBwQ gSQAtd"
 >
   <p
-    className="sc-AxirZ euxtxW"
+    className="sc-gsTCUz bGwQZY"
     dangerouslySetInnerHTML={
       Object {
         "__html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -13,7 +13,7 @@ exports[`Paragraph renders correctly 1`] = `
     }
   />
   <p
-    className="sc-AxirZ euxtxW"
+    className="sc-gsTCUz bGwQZY"
     dangerouslySetInnerHTML={
       Object {
         "__html": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",

@@ -3,18 +3,18 @@
 exports[`PageWrapper english version renders correctly 1`] = `
 Array [
   <div
-    className="sc-AxhUy iNFuyY"
+    className="sc-eCssSg vodYZ"
   >
     <h1
-      className="sc-AxjAm hWUaCP"
+      className="sc-bdfBwQ dCppHW"
     >
       Michael Danilov
     </h1>
     <ul
-      className="sc-AxiKw hdlPUq"
+      className="sc-dlfnbm hDAsMv"
     >
       <li
-        className="sc-AxhCb fCdlja"
+        className="sc-hKgILt jkHUfZ"
       >
         <a
           aria-current="page"
@@ -28,7 +28,7 @@ Array [
         </a>
       </li>
       <li
-        className="sc-AxhCb fCdlja"
+        className="sc-hKgILt jkHUfZ"
       >
         <a
           href="/cv"
@@ -39,7 +39,7 @@ Array [
         </a>
       </li>
       <li
-        className="sc-AxhCb fCdlja"
+        className="sc-hKgILt jkHUfZ"
       >
         <a
           href="/contacts"
@@ -50,7 +50,7 @@ Array [
         </a>
       </li>
       <li
-        className="sc-AxhCb fCdlja"
+        className="sc-hKgILt jkHUfZ"
       >
         <a
           href="/ru"
@@ -80,18 +80,18 @@ Array [
 exports[`PageWrapper russian version renders correctly 1`] = `
 Array [
   <div
-    className="sc-AxhUy iNFuyY"
+    className="sc-eCssSg vodYZ"
   >
     <h1
-      className="sc-AxjAm hWUaCP"
+      className="sc-bdfBwQ dCppHW"
     >
       Михаил Данилов
     </h1>
     <ul
-      className="sc-AxiKw hdlPUq"
+      className="sc-dlfnbm hDAsMv"
     >
       <li
-        className="sc-AxhCb fCdlja"
+        className="sc-hKgILt jkHUfZ"
       >
         <a
           href="/ru"
@@ -102,7 +102,7 @@ Array [
         </a>
       </li>
       <li
-        className="sc-AxhCb fCdlja"
+        className="sc-hKgILt jkHUfZ"
       >
         <a
           href="/ru/cv"
@@ -113,7 +113,7 @@ Array [
         </a>
       </li>
       <li
-        className="sc-AxhCb fCdlja"
+        className="sc-hKgILt jkHUfZ"
       >
         <a
           href="/ru/contacts"
@@ -124,7 +124,7 @@ Array [
         </a>
       </li>
       <li
-        className="sc-AxhCb fCdlja"
+        className="sc-hKgILt jkHUfZ"
       >
         <a
           aria-current="page"
