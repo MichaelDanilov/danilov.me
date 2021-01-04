@@ -2,6 +2,7 @@
   "name": "danilov.me",
   "version": "3.1.0",
   "description": "Personal website of Michael Danilov",
+  "private": true,
   "homepage": "https://github.com/MichaelDanilov/danilov.me",
   "repository": {
     "type": "git",
